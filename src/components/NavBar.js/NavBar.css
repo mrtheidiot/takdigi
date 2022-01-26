@@ -1,0 +1,19 @@
+.navbar-main__main {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 2vh 0;
+}
+
+.navbar-main__main div {
+  padding-bottom: 0.1rem;
+  transition: ease-in-out 0.2s opacity;
+}
+
+.navbar-main__main div:hover {
+  opacity: 0.5;
+}
+
+.bor-bot {
+  border-bottom: solid green 1px;
+}

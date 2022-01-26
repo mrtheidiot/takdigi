@@ -1,0 +1,19 @@
+.logo-main__main {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.logo-main__info {
+  margin: auto 0;
+  text-align: center;
+}
+
+.logo-main__title {
+  font-family: 'Lobster', cursive;
+  font-size: calc(2vh + 2vw);
+}
+
+.logo-main__subtitle {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: calc(1.5vh + 1vw);
+}
