@@ -1,13 +1,23 @@
-.navbar-main__main {
+.navbar-main-content {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
-  margin: 2vh 0;
+  width: 80%;
+  margin: auto;
+}
+
+.navbar-main__main {
+  display: flex;
+  justify-content: space-around;
+  height: 18vh;
+  margin: auto;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.7rem;
 }
 
 .navbar-main__main div {
   padding-bottom: 0.1rem;
   transition: ease-in-out 0.2s opacity;
+  margin: auto;
 }
 
 .navbar-main__main div:hover {
@@ -17,3 +27,13 @@
 .bor-bot {
   border-bottom: solid green 1px;
 }
+
+.logo {
+  justify-content: center;
+}
+
+.logo img {
+  height: 13vh;
+}
+
+

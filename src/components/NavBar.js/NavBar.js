@@ -3,13 +3,13 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import MainPicture from "./MainPicture";
 import ObedienceDropdown from "./ObedienceDropdown";
+import Logo from "../../assets/Logo1.svg";
 
 const NavBar = () => {
   const [selectedLink, setSelectedLink] = useState(1);
   const [showDropdown, setShowDropdown] = useState(true);
 
   const linkStyle = {
-    margin: "0 1rem",
     textDecoration: "none",
     color: "black",
   };
@@ -33,14 +33,13 @@ const NavBar = () => {
             ASORTYMENT
           </Link>
         </div>
-        <div
-          onClick={() => setSelectedLink(4)}
-          className={selectedLink === 4 ? "bor-bot" : ""}
-        >
+      </div>
+        <div className="logo">
           <Link to="/" style={linkStyle}>
-            JA I MOJE PSY
+            <img src={Logo} />
           </Link>
         </div>
+        <div className="navbar-main__main">
         <div
           onClick={() => setSelectedLink(5)}
           className={selectedLink === 5 ? "bor-bot" : ""}
@@ -58,15 +57,12 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-      <MainPicture link={selectedLink} />
+      {/* <MainPicture link={selectedLink} /> */}
     </div>
   );
 };
 
 export default NavBar;
 
-
-
-
-        // onMouseOver={() => setShowDropdown(true)}
-        // onMouseLeave={() => setShowDropdown(false)}
+// onMouseOver={() => setShowDropdown(true)}
+// onMouseLeave={() => setShowDropdown(false)}
