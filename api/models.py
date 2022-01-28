@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from django.db.models.fields import DateTimeField
 from django.db.models.fields.related import ForeignKey
@@ -22,6 +23,7 @@ class GalImg (models.Model):
     title = models.CharField(max_length=50)
 
 class Trening (models.Model):
+    rodzaj = models.ForeignKey(TrainingEvent, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
     description2 = models.CharField(max_length=200, blank=True, null=True)

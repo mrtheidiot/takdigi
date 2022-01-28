@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from .models import JaIMojePsy, GalImg, Trening, Kontakt, Wydarzenie
+from .models import JaIMojePsy, GalImg, Trening, Kontakt, Wydarzenie, TrainingEvent
 
 
 class JaimojepsySerializer(ModelSerializer):
@@ -25,4 +25,9 @@ class KontaktSerializer(ModelSerializer):
 class WydarzenieSerializer(ModelSerializer):
   class Meta():
     model = Wydarzenie
+    fields = ('__all__') 
+
+class TrainingEventSerializer(ModelSerializer):
+  class Meta():
+    model = TrainingEvent
     fields = ('__all__') 

@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .serializers import JaimojepsySerializer, GalImgSerializer, TreningSerializer, KontaktSerializer, WydarzenieSerializer
-from .models import JaIMojePsy, GalImg, Trening, Kontakt, Wydarzenie
+from .serializers import JaimojepsySerializer, GalImgSerializer, TreningSerializer, KontaktSerializer, WydarzenieSerializer, TrainingEventSerializer
+from .models import JaIMojePsy, GalImg, Trening, Kontakt, Wydarzenie, TrainingEvent
+
+
 
 @api_view(['GET'])
 def getJaimojepsy(request):
@@ -32,4 +34,10 @@ def getKontakt(request):
 def getWydarzenie(request):
     objects = Wydarzenie.objects.all()
     serializer = WydarzenieSerializer(objects, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getTrainingEvents(request):
+    objects = TrainingEvent.objects.all()
+    serializer = TrainingEventSerializer(objects, many=True)
     return Response(serializer.data)
