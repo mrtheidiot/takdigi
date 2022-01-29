@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./trainings.css";
 import TreningSection from "./TreningSection";
+import zdj1 from './../../assets/p4.jpg';
+import zdj2 from './../../assets/p6.jpg';
 
 const Trainings = () => {
   const [trainings, setTrainings] = useState([]);
@@ -18,8 +20,8 @@ const Trainings = () => {
 
   return (
     <div className="training-wrapper">
-      <TreningSection trening={trening_indywid} tr_name="trening indywidualny"/>
-      <TreningSection trening={trening_grp} tr_name="trening grupowy"/>
+      <TreningSection trening={trening_indywid} zdj={zdj1} tr_name="trening indywidualny"/>
+      <TreningSection trening={trening_grp} zdj={zdj2} tr_name="trening grupowy"/>
     </div>
   );
 };

@@ -13,51 +13,54 @@ const NavBar = () => {
     textDecoration: "none",
     color: "black",
   };
-
   return (
-    <div className="navbar-main-content">
-      <div className="navbar-main__main">
-        <div
-          onClick={() => setSelectedLink(2)}
-          className={selectedLink === 2 ? "bor-bot" : ""}
-        >
-          <Link to="/treningi" style={linkStyle}>
-            TRENING OBEDIENCE
-          </Link>
-        </div>
-        <div
-          onClick={() => setSelectedLink(3)}
-          className={selectedLink === 3 ? "bor-bot" : ""}
-        >
-          <Link to="/" style={linkStyle}>
-            ASORTYMENT
-          </Link>
-        </div>
-      </div>
-        <div className="logo">
+    <div className="nav-wrapper">
+      <div className="nav-section-wrapper">
+        <div className="nav-logo">
           <Link to="/" style={linkStyle}>
             <img src={Logo} />
           </Link>
+          <div className="opis-main">
+            <div className="opis-sub1">DLA PSÓW I OPIEKUNÓW</div>
+            <div className="opis-sub2">Treningi | Szkolenia | Warsztaty</div>
+          </div>
         </div>
-        <div className="navbar-main__main">
-        <div
-          onClick={() => setSelectedLink(5)}
-          className={selectedLink === 5 ? "bor-bot" : ""}
-        >
-          <Link to="/" style={linkStyle}>
-            KALENDARZ
-          </Link>
-        </div>
-        <div
-          onClick={() => setSelectedLink(6)}
-          className={selectedLink === 6 ? "bor-bot" : ""}
-        >
-          <Link to="/" style={linkStyle}>
-            KONTAKT
-          </Link>
+        <div className="nav-section">
+          <div
+            onClick={() => setSelectedLink(2)}
+            className={selectedLink === 2 ? "bor-bot" : ""}
+          >
+            <Link to="/treningi" style={linkStyle}>
+              TRENING OBEDIENCE
+            </Link>
+          </div>
+          <div
+            onClick={() => setSelectedLink(3)}
+            className={selectedLink === 3 ? "bor-bot" : ""}
+          >
+            <Link to="/" style={linkStyle}>
+              ASORTYMENT
+            </Link>
+          </div>
+          <div
+            onClick={() => setSelectedLink(5)}
+            className={selectedLink === 5 ? "bor-bot" : ""}
+          >
+            <Link to="/" style={linkStyle}>
+              KALENDARZ
+            </Link>
+          </div>
+          <div
+            onClick={() => setSelectedLink(6)}
+            className={selectedLink === 6 ? "bor-bot" : ""}
+          >
+            <Link to="/" style={linkStyle}>
+              KONTAKT
+            </Link>
+          </div>
         </div>
       </div>
-      {/* <MainPicture link={selectedLink} /> */}
+      <MainPicture link={selectedLink} />
     </div>
   );
 };
