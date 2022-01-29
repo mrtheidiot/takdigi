@@ -17,11 +17,13 @@ const Trainings = () => {
   };
   const trening_indywid = trainings.filter((trening) => trening.rodzaj === 1);
   const trening_grp = trainings.filter((trening) => trening.rodzaj === 2);
+  const opis_indywid = "Prywatny trening w wybranym miejscu, tylko Ja, Ty i Twój pies. Trenujemy to co jest dla Ciebie wazne w tym momencie";
+  const opis_grp = "Konkretny program i miejsce";
 
   return (
     <div className="training-wrapper">
-      <TreningSection trening={trening_indywid} zdj={zdj1} tr_name="trening indywidualny"/>
-      <TreningSection trening={trening_grp} zdj={zdj2} tr_name="trening grupowy"/>
+      <TreningSection trening={trening_indywid} zdj={zdj1} opis={opis_indywid} tr_name="trening indywidualny"/>
+      <TreningSection trening={trening_grp} zdj={zdj2} opis={opis_grp} tr_name="trening grupowy" direct="1" />
     </div>
   );
 };
