@@ -7,7 +7,7 @@
 .nav-section-wrapper {
   height: 18vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0 3%;
   width: 100%;
   position: fixed;
@@ -25,7 +25,7 @@
   /* letter-spacing: 2px; */
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
-  width: 50%;
+  width: 55%;
   justify-content: flex-end;
   font-weight: bold;
 
@@ -50,13 +50,13 @@ margin: auto 0.7rem;
   display: flex;
   justify-content: flex-start;
   margin: auto 0;
-  width: 30%;
+  width: 35%;
   
 }
 
 .opis-main {
   font-family: 'Indie Flower', cursive;
-  margin: auto;
+  margin: auto 2%;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -65,4 +65,15 @@ margin: auto 0.7rem;
   border-bottom: solid green 1px;
 }
 
+/* .dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;} */
 

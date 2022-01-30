@@ -5,6 +5,7 @@ import Logo from "./components/Logo/Logo";
 import NavBar from "./components/NavBar.js/NavBar";
 import Trainings from "./components/Trainings/Trainings";
 import HomePage from "./components/HomePage.js/HomePage";
+import Kontakt from "./components/Kontakt/Kontakt";
 function App() {
   return (
     <div className="app-div">
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/treningi" element={<Trainings />} />
+            <Route exact path="/kontakt" element={<Kontakt />} />
           </Routes>
         </div>
       </Router>

@@ -18,8 +18,11 @@ const NavBar = () => {
       <div className="nav-section-wrapper">
         <div className="nav-logo">
           <Link to="/" style={linkStyle}>
+            
             <img src={Logo} />
+
           </Link>
+          
           <div className="opis-main">
             <div className="opis-sub1">DLA PSÓW I OPIEKUNÓW</div>
             <div className="opis-sub2">Treningi | Szkolenia | Warsztaty</div>
@@ -36,11 +39,13 @@ const NavBar = () => {
           </div>
           <div
             onClick={() => setSelectedLink(3)}
-            className={selectedLink === 3 ? "bor-bot" : ""}
+            className={selectedLink === 3 ? "bor-bot dropdown" : "dropdown"}
           >
-            <Link to="/" style={linkStyle}>
+            <Link to="/" style={linkStyle} className="dropbtn">
               ASORTYMENT
             </Link>
+            <div className="dropdown-content">
+            </div>
           </div>
           <div
             onClick={() => setSelectedLink(5)}
@@ -54,7 +59,7 @@ const NavBar = () => {
             onClick={() => setSelectedLink(6)}
             className={selectedLink === 6 ? "bor-bot" : ""}
           >
-            <Link to="/" style={linkStyle}>
+            <Link to="/kontakt" style={linkStyle}>
               KONTAKT
             </Link>
           </div>

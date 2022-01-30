@@ -1,0 +1,41 @@
+.kontakt-main {
+    background-color: #EDCDBB;
+    /* width: 80%; */
+    margin: auto;
+    border-radius: 20px;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Bebas Neue', cursive;
+}
+.kontakt-img {
+    width: 40%;
+    object-fit: fill;
+
+}
+
+.kontakt-img img {
+    width: 100%;
+    /* height: auto; */
+    border-radius: 20px;
+}
+
+.kontakt-descr {
+    margin-left: 2%;
+}
+
+.kontakt-imie {
+    font-size: 3rem;
+}
+
+.kontakt-opis {
+    font-size: 1.5rem;
+}
+
+.kontakt-adresy {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50%;
+}
