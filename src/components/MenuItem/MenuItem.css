@@ -39,7 +39,7 @@
 }
 
 .dropdown:hover .dropdown-content {
-  animation: fadeInMenu 0.1s both ease-in;
+  animation: fadeInMenu 0.3s both ease-in;
   display: block;
 }
 
