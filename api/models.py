@@ -2,6 +2,7 @@ from email.policy import default
 from django.db import models
 from django.db.models.fields import DateTimeField
 from django.db.models.fields.related import ForeignKey
+from django.utils.text import slugify
 
 class JaIMojePsy (models.Model):
     image = models.ImageField(upload_to='jaimojepsy/')
@@ -17,6 +18,9 @@ class TrainingEvent(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     upated = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.title
+
 class GalImg (models.Model):
     event = models.ForeignKey(TrainingEvent, related_name="image_event", on_delete=models.CASCADE)
     image = models.ImageField(upload_to="gallery/%Y/%m/%d/")
@@ -25,12 +29,21 @@ class GalImg (models.Model):
 class Trening (models.Model):
     rodzaj = models.ForeignKey(TrainingEvent, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=100)
-    description = models.CharField(max_length=200)
-    description2 = models.CharField(max_length=200, blank=True, null=True)
+    description = models.CharField(max_length=500)
+    description2 = models.CharField(max_length=500, blank=True, null=True)
     link = models.CharField(max_length=300)
     link2 = models.CharField(max_length=300, blank=True, null=True)
     price = models.DecimalField(max_digits=7, decimal_places=2)
     price2 = models.DecimalField(max_digits=7, decimal_places=2, blank=True, null=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super(Trening, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title
 
 class EventCategory (models.Model):
     title = models.CharField(max_length=200)

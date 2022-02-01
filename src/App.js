@@ -1,16 +1,15 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState, useEffect } from 'react'
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Logo from "./components/Logo/Logo";
 import NavBar from "./components/NavBar.js/NavBar";
 import Trainings from "./components/Trainings/Trainings";
 import HomePage from "./components/HomePage.js/HomePage";
 import Kontakt from "./components/Kontakt/Kontakt";
-function App() {
+
+function App() {  
   return (
     <div className="app-div">
       <Router>
-        {/* <Logo /> */}
         <NavBar />
         <div className="apps-wrapper">
           <Routes>

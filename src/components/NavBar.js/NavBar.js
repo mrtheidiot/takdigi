@@ -1,67 +1,39 @@
-import React, { useState } from "react";
-import "./NavBar.css";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import MainPicture from "./MainPicture";
-import ObedienceDropdown from "./ObedienceDropdown";
-import Logo from "../../assets/Logo1.svg";
+import MenuItem from "../MenuItem/MenuItem";
+import Logo from "../MenuItem/Logo";
+
+import "./NavBar.css";
 
 const NavBar = () => {
   const [selectedLink, setSelectedLink] = useState(1);
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [trainingTitles, setTrainingTitles] = useState([])
+  
+  const getTrainingTitles = async() => {
+    const response = await fetch ("/api/trainingtitles/");
+    const data = await response.json();
+    setTrainingTitles(data);
+  }
+  
+  useEffect(()=>{
+    getTrainingTitles();
+  },[])
 
-  const linkStyle = {
-    textDecoration: "none",
-    color: "black",
-  };
+  console.log(trainingTitles)
+
+
   return (
     <div className="nav-wrapper">
       <div className="nav-section-wrapper">
-        <div className="nav-logo">
-          <Link to="/" style={linkStyle}>
-            
-            <img src={Logo} />
-
-          </Link>
-          
-          <div className="opis-main">
-            <div className="opis-sub1">DLA PSÓW I OPIEKUNÓW</div>
-            <div className="opis-sub2">Treningi | Szkolenia | Warsztaty</div>
+        <div className="nav-secion__position">
+          <div className="nav-logo">
+            <Logo />
           </div>
-        </div>
-        <div className="nav-section">
-          <div
-            onClick={() => setSelectedLink(2)}
-            className={selectedLink === 2 ? "bor-bot" : ""}
-          >
-            <Link to="/treningi" style={linkStyle}>
-              TRENING OBEDIENCE
-            </Link>
-          </div>
-          <div
-            onClick={() => setSelectedLink(3)}
-            className={selectedLink === 3 ? "bor-bot dropdown" : "dropdown"}
-          >
-            <Link to="/" style={linkStyle} className="dropbtn">
-              ASORTYMENT
-            </Link>
-            <div className="dropdown-content">
-            </div>
-          </div>
-          <div
-            onClick={() => setSelectedLink(5)}
-            className={selectedLink === 5 ? "bor-bot" : ""}
-          >
-            <Link to="/" style={linkStyle}>
-              KALENDARZ
-            </Link>
-          </div>
-          <div
-            onClick={() => setSelectedLink(6)}
-            className={selectedLink === 6 ? "bor-bot" : ""}
-          >
-            <Link to="/kontakt" style={linkStyle}>
-              KONTAKT
-            </Link>
+          <div className="nav-section">
+            <MenuItem name={"TRENING OBEDIENCE"} destination={"/treningi"} dropdown={trainingTitles}/>
+            <MenuItem name={"ASORTYMENT"} destination={"/asortyment"} />
+            <MenuItem name={"KALENDARZ"} destination={"/kalendarz"} />
+            <MenuItem name={"KONTAKT"} destination={"/kontakt"} />
           </div>
         </div>
       </div>
@@ -71,6 +43,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// onMouseOver={() => setShowDropdown(true)}
-// onMouseLeave={() => setShowDropdown(false)}

@@ -30,4 +30,9 @@ class WydarzenieSerializer(ModelSerializer):
 class TrainingEventSerializer(ModelSerializer):
   class Meta():
     model = TrainingEvent
-    fields = ('__all__') 
+    fields = ('__all__')
+
+class TrainingTitlesSerializer(ModelSerializer):
+  class Meta():
+    model = Trening
+    fields = ('title', 'slug', ) 
