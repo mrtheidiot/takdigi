@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import MainPicture from "./MainPicture";
 import MenuItem from "../MenuItem/MenuItem";
 import Logo from "../MenuItem/Logo";
 
 import "./NavBar.css";
 
 const NavBar = () => {
-  const [selectedLink, setSelectedLink] = useState(1);
   const [trainingTitles, setTrainingTitles] = useState([])
   
   const getTrainingTitles = async() => {
@@ -18,9 +16,6 @@ const NavBar = () => {
   useEffect(()=>{
     getTrainingTitles();
   },[])
-
-  console.log(trainingTitles)
-
 
   return (
     <div className="nav-wrapper">
@@ -37,7 +32,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <MainPicture link={selectedLink} />
     </div>
   );
 };

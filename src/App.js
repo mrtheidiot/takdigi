@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar.js/NavBar";
 import Trainings from "./components/Trainings/Trainings";
 import HomePage from "./components/HomePage.js/HomePage";
 import Kontakt from "./components/Kontakt/Kontakt";
+import Asortyment from './components/Asortyment/Asortyment';
 
 function App() {  
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/treningi" element={<Trainings />} />
+            <Route exact path="/asortyment" element={<Asortyment />} />
             <Route exact path="/kontakt" element={<Kontakt />} />
           </Routes>
         </div>
