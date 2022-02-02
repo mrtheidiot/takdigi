@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Trainings.css";
 import TrainingSection from "./TrainingSection";
 import piesek from "./../../assets/p2.jpg";
 import Banner from "../Banner/Banner";
@@ -18,7 +17,7 @@ const Trainings = () => {
   return (
     <>
       <Banner id={1} />
-      <div className="training-wrapper">
+      <>
         {trainings.map((trening, index) => (
           <TrainingSection
             title={trening.title}
@@ -28,7 +27,7 @@ const Trainings = () => {
             key={index}
           />
         ))}
-      </div>
+      </>
     </>
   );
 };
