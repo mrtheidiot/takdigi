@@ -24,12 +24,17 @@ function App() {
     getTrainingTitles();
   }, []);
 
+  const itemTitles = [
+    {title: 'szarpaki', slug: 'szarpaki'},
+    {title: 'sukienki', slug: 'sukienki'},
+  ]
+
   console.log(menuOpen);
   return (
     <div className="app-div">
       <Router>
         {menuOpen && <OverlayMenu callback={handleOverlayMenu} />}
-        <NavBar handleOverlayMenu={handleOverlayMenu} dropdownTitles={trainingTitles} />
+        <NavBar handleOverlayMenu={handleOverlayMenu} trainingTitles={trainingTitles} itemTitles={itemTitles}/>
         <div className="apps-wrapper">
           <Routes>
             <Route exact path="/" element={<HomePage />} />
