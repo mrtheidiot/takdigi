@@ -13,13 +13,13 @@ const Banner = (props) => {
     { img: `${dog3}`, alt: "piesek", id: 3 },
     { img: `${dog4}`, alt: "piesek", id: 4 },
   ];
-  const { img } = Object.values(banners).filter(
+  const { img, alt } = Object.values(banners).filter(
     (baner) => baner.id === props.id
   )[0];
 
   return (
     <div className="mainPicture-main">
-      <img src={img} />
+      <img src={img} alt={alt}/>
     </div>
   );
 };

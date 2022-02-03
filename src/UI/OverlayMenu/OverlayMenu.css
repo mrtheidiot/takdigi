@@ -21,14 +21,14 @@
 }
 
 .overlay-logo {
-    height: 30%;
+    height: 20%;
     margin: 5% 0;
     display: flex;
     justify-content: center;
 }
 
 .overlay-logo img {
-    height: 100%;
+    height: 90%;
 }
 
 .overlay-links {
@@ -42,6 +42,14 @@
   text-align: right;
   margin: 2% auto;
 }
+
+.close-icon i {
+  transition: ease 0.3s rotate;
+}
+
+.close-icon i:hover {
+  rotate: 90deg;
+} 
 
 @-webkit-keyframes slide {
   100% {

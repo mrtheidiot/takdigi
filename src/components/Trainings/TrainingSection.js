@@ -3,8 +3,8 @@ import "./TrainingSection.css";
 const TrainingSection = (props) => {
   const styles1 =
     props.ifReverse === 0 ? "section-main-position" : "reverse-row";
-  const styles2 = 
-    props.ifReverse === 0 ? "section-wrapper-1" : "section-wrapper-2"
+  const styles2 =
+    props.ifReverse === 0 ? "section-wrapper-1" : "section-wrapper-2";
 
   return (
     <div className={styles2}>
@@ -14,9 +14,11 @@ const TrainingSection = (props) => {
         </div>
         <div className="description-wrapper">
           <div className="description-title">{props.title}</div>
-          <div className="description-1">{props.description}</div>
-          <div className="desctiption-linksprices">
-            Tu beda linki i ceny - jeszcze do zrobienia
+          <div className="descrption-links-wrapper">
+            <div className="description-1">{props.description}</div>
+            <div className="desctiption-linksprices">
+              Tu beda linki i ceny - jeszcze do zrobienia
+            </div>
           </div>
         </div>
       </div>

@@ -6,4 +6,9 @@
 .overlayItem__main a {
     text-decoration: none;
     color: white;
+    transition: ease 0.3s opacity;
+}
+
+.overlayItem__main a:hover {
+    opacity: 0.5;
 }

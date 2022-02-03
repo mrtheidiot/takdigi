@@ -34,16 +34,3 @@ const NavBar = (props) => {
 };
 
 export default NavBar;
-
-
-// const [trainingTitles, setTrainingTitles] = useState([]);
-
-// const getTrainingTitles = async () => {
-//   const response = await fetch("/api/trainingtitles/");
-//   const data = await response.json();
-//   setTrainingTitles(data);
-// };
-
-// useEffect(() => {
-//   getTrainingTitles();
-// }, []);

@@ -11,6 +11,7 @@
   justify-content: space-between;
   width: 90%;
   margin: auto;
+  align-items: center;
 }
 
 .nav-section {
@@ -28,6 +29,7 @@
     display: none;
   }
 }
+
 @media (min-width: 992px) {
   .nav-section-menuicon {
     display: none;
@@ -39,5 +41,5 @@
 }
 
 .menuIcon {
-  margin: auto;
+  margin: auto 0; 
 }
