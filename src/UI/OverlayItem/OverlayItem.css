@@ -1,0 +1,9 @@
+.overlayItem__main {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+.overlayItem__main a {
+    text-decoration: none;
+    color: white;
+}

@@ -22,3 +22,22 @@
 .bor-bot {
   border-bottom: solid green 1px;
 }
+
+@media (max-width: 992px) {
+  .nav-section {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .nav-section-menuicon {
+    display: none;
+  }
+}
+
+.nav-section-menuicon {
+  height: 100%;
+}
+
+.menuIcon {
+  margin: auto;
+}

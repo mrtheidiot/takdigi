@@ -70,3 +70,13 @@
     margin: auto;
     text-align: center;
 }
+
+/* @media (max-width: 992px) {
+    .section-main-position {
+      flex-direction: column;
+    }
+    .reverse-row {
+        flex-direction: column;
+    }
+  } */
+
