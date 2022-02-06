@@ -8,7 +8,6 @@
 
 .menuItem__main {
   font-size: 1.6rem;
-  /* font-weight: bold; */
   height: 100%;
   transition: ease-in-out 0.2s opacity;
   transition: ease 0.1s transform;

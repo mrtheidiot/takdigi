@@ -1,0 +1,14 @@
+.mainpage__main {
+  background-color: #EDCDBB;
+  font-family: 'Teko';
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.mainpage__heading {
+  width: 60%;
+  margin: auto;
+  font-size: 2rem;
+  padding: 1% 0;
+  text-align: center;
+}

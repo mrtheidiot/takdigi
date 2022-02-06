@@ -1,7 +1,10 @@
-.logo__main {
-
+.logo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
 .logo__main img {
-  height: 10vh;
+  height: 90%;
 }

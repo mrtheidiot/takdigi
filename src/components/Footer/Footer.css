@@ -1,0 +1,32 @@
+.footer__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #370665;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.footer__main div {
+  padding: 0.3%;
+}
+
+
+
+.footer__copy {
+
+  color: white;
+  width: 20%;
+  font-family: 'Teko';
+  text-align: right;  
+}
+
+.footer__icons {
+  text-align: left;
+  color: white;
+  width: 20%;
+}
+
+.footer__icons i {
+  margin: 0 1%;
+}

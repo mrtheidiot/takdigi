@@ -1,0 +1,28 @@
+.button__main a {
+  text-decoration: none;
+}
+
+.button__main {
+  width: 20%;
+  margin: 1%;
+}
+
+.button__sub {
+  border-radius: 15px;
+}
+
+.button_link-1 {
+  color: black;
+  background-color: red;
+}
+
+.button_link-2 {
+  color: white;
+  background-color: blue;
+}
+
+.button_link-3 {
+  color: white;
+  background-color: green;
+}
+

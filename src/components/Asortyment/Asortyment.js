@@ -14,7 +14,7 @@ const Asortyment = () => {
 
     return (
     <>
-      <Banner id={1} />
+      <Banner id={2} />
       <>
         {items.map((trening, index) => (
           <AsortymentSection

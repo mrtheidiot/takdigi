@@ -17,7 +17,11 @@ const NavBar = (props) => {
               destination={"/treningi"}
               dropdown={props.trainingTitles}
             />
-            <MenuItem name={"ASORTYMENT"} destination={"/asortyment"} dropdown={props.itemTitles}/>
+            <MenuItem
+              name={"ASORTYMENT"}
+              destination={"/asortyment"}
+              dropdown={props.itemTitles}
+            />
             <MenuItem name={"KALENDARZ"} destination={"/kalendarz"} />
             <MenuItem name={"KONTAKT"} destination={"/kontakt"} />
           </div>
@@ -25,7 +29,9 @@ const NavBar = (props) => {
             className="nav-section-menuicon"
             onClick={props.handleOverlayMenu}
           >
-            <div className="menuIcon"><i class="fas fa-bars fa-3x"></i></div>
+            <div className="menuIcon">
+              <i class="fas fa-bars fa-3x"></i>
+            </div>
           </div>
         </div>
       </div>

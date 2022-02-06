@@ -1,4 +1,7 @@
 import React from "react";
+// import CircularProgress from '@mui/material/CircularProgress';
+// import Image from "material-ui-image";
+
 import "./Banner.css";
 
 import dog1 from "./../../assets/dogo1.jpg";
@@ -21,6 +24,9 @@ const Banner = (props) => {
     <div className="mainPicture-main">
       <img src={img} alt={alt}/>
     </div>
+    // <>
+    //   <Image src={img} alt={alt} />
+    // </>
   );
 };
 

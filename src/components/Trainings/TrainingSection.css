@@ -2,7 +2,7 @@
     display: flex;
     /* height: 50vh; */
     padding: 2% 0;
-    width: 80%;
+    width: 60%;
     margin: auto;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -23,7 +23,7 @@
 }
 
 .section-main-position {
-    width: 80%;
+    width: 60%;
     display: flex;
     /* height: 50vh; */
     padding: 2 0%;
@@ -77,6 +77,15 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+@media (min-width: 992px) and (max-width: 1700px) {
+    .section-image {
+      width: 40%;
+    }
+    .description-wrapper {
+        width: 40%;
+    }
+  }
 
 @media (max-width: 992px) {
     .section-main-position {

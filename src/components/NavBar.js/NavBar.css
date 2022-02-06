@@ -1,5 +1,8 @@
+.nav-wrapper {
+  height: vh;
+}
+
 .nav-section-wrapper {
-  padding: 0.5% 0;
   width: 100%;
   position: fixed;
   background-color: white;
