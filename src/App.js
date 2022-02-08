@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.js/NavBar";
 import Trainings from "./components/Trainings/Trainings";
 import Kontakt from "./components/Kontakt/Kontakt";
@@ -30,7 +30,6 @@ function App() {
     {title: 'sukienki', slug: 'sukienki'},
   ]
 
-  console.log(menuOpen);
   return (
     <div className="app-div">
       <Router>

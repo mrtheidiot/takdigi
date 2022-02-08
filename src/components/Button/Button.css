@@ -3,12 +3,14 @@
 }
 
 .button__main {
-  width: 20%;
-  margin: 1%;
+  margin: 1% 0;
+  width: 20vh;
+  text-align: center;
 }
 
 .button__sub {
   border-radius: 15px;
+  padding: 1%;
 }
 
 .button_link-1 {

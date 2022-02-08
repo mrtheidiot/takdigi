@@ -10,8 +10,8 @@ const MenuItem = (props) => {
       {props.dropdown && (
         <div class="dropdown-content">
           {props.dropdown.map((trening, index) => (
-            <div className="dropdown-link">
-              <Link to={trening.slug} key={index}>
+            <div className="dropdown-link" key={index}>
+              <Link to={trening.slug} >
                 {trening.title}
               </Link>
             </div>

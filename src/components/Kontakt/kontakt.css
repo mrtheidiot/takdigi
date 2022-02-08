@@ -1,27 +1,150 @@
-.kontakt-main {
-    background-color: #EDCDBB;
-    /* width: 80%; */
-    margin: auto;
-    border-radius: 20px;
-    padding: 1%;
+.kontakt__height {
+    height: 86vh;
+}
+
+.kontakt__container-position {
+    padding-top: 5%;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: 'Bebas Neue', cursive;
 }
-.kontakt-img {
-    width: 40%;
-    object-fit: fill;
 
+.kontakt__content-info {
+    background-color: #EDCDBB;
+    width: 30%;
+    padding: 2%;
 }
 
-.kontakt-img img {
-    width: 100%;
-    /* height: auto; */
-    border-radius: 20px;
+.kontakt__content-links {
+    background-color: #EDCDBB;
+    width: 30%;
+    padding: 2%;
+}
+
+.kontakt-imie {
+    font-size: 3rem;
+}
+
+.kontakt-opis {
+    font-size: 1.5rem;
+}
+
+.kontakt-buttons {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt-buttons div {
+    width: 30vh;
+}
+
+
+@media (max-width: 992px) {
+    .kontakt__container-position {
+      flex-direction: column;
+      width: 90%;
+      margin: 5% auto;
+      text-align: center;
+    }
+
+    .kontakt__content-info {
+        width: 100%;
+        background-color: #EDCDBB;
+        padding: 12% 0 5% 0;
+        margin: 0;
+    }
+    .kontakt__content-links {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 12% 0;
+    }
+    .kontakt-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@media (max-width: 992px) {
+    .kontakt-main {
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+      height: 50%;
+    }
+
+    .kontakt-kontakt {
+        width: 100%;
+    }
+
+    .kontakt-descr {
+        width: 100%;
+        background-color: #EDCDBB;
+        padding-bottom: 5%;
+        padding-top: 2%;
+
+    }
+    .kontakt-buttons {
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
+
+  .kontakt-wrapper {
+    height: 86vh;
+}
+
+.kontakt-main {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    height: 40%;
+    padding: 2%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
+   
+}
+
+.kontakt-imieiopis {
+    margin-bottom: 5%;
 }
 
 .kontakt-descr {
-    margin-left: 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #EDCDBB;
 }
 
 .kontakt-imie {
@@ -33,9 +156,26 @@
 }
 
 .kontakt-adresy {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
     height: 50%;
 }
+
+.kontakt-kontakt {
+    padding: 2%;
+    width: 50%;
+    background-color: #EDCDBB;
+}
+
+.kontakt-buttons {
+    margin-top: 3%;
+    font-size: 1.5rem;
+    height: 60%;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+} */

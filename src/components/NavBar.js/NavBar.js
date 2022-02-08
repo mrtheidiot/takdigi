@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import MenuItem from "../MenuItem/MenuItem";
 import Logo from "../MenuItem/Logo";
 import "./NavBar.css";
