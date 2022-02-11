@@ -21,6 +21,7 @@ const NavBar = (props) => {
               destination={"/asortyment"}
               dropdown={props.itemTitles}
             />
+            <MenuItem name={"JA I MOJE PSY"} destination={"/omnie"} />
             <MenuItem name={"KALENDARZ"} destination={"/kalendarz"} />
             <MenuItem name={"KONTAKT"} destination={"/kontakt"} />
           </div>

@@ -50,10 +50,13 @@ class EventCategory (models.Model):
     desc = models.CharField(max_length=500, blank=True, null=True)
 
 class Wydarzenie (models.Model):
-    event = ForeignKey(EventCategory, related_name="events", on_delete=models.CASCADE)
-    event_link = models.CharField(max_length=200, default='')
-    zapisy_link = models.CharField(max_length=200, default='')
-    title =  models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
+    desc1 = models.CharField(max_length=200)
+    link1 = models.CharField(max_length=200)
+    desc2 = models.CharField(max_length=200, blank=True, null=True)
+    link2 = models.CharField(max_length=200, blank=True, null=True)
+    desc3 = models.CharField(max_length=200, blank=True, null=True)
+    link3 = models.CharField(max_length=200, blank=True, null=True)
     day = models.CharField(max_length=20)
     month = models.CharField(max_length=20)
     year = models.CharField(max_length=20)

@@ -1,107 +1,111 @@
 .reverse-row {
-    display: flex;
-    /* height: 50vh; */
-    padding: 2% 0;
-    width: 60%;
-    margin: auto;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin: 0 auto 2% auto;
+  display: flex;
+  padding: 2% 0;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 0 auto 2% auto;
 }
 
 .reverse-row .desctiption-linksprices {
-    background-color: #f9faef;
+  background-color: #f9faef;
 }
 
 .section-wrapper-1 {
-    width: 100%;
+  width: 100%;
 }
 
 .section-wrapper-2 {
-    width: 100%;
-    background-color: #EDCDBB;
+  width: 100%;
+  background-color: #edcdbb;
 }
 
 .section-main-position {
-    width: 60%;
-    display: flex;
-    /* height: 50vh; */
-    padding: 2 0%;
-    justify-content: space-between;
-    margin: 0 auto 2% auto;    
+  width: 80%;
+  display: flex;
+  /* height: 50vh; */
+  padding: 2 0%;
+  justify-content: space-between;
+  margin: 0 auto 2% auto;
 }
 .section-image {
-    height: 100%;
-    width: 49%;
+  height: 100%;
+  width: 49%;
 }
 
 .section-image img {
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-    border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .description-wrapper {
-    width: 49%;
-    margin: 0 auto;
+  width: 49%;
+  margin: 0 auto;
 }
 
 .description-title {
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Teko';
-    height: 27%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Teko";
+  height: 27%;
 }
 
 .description-1 {
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    height: 30%;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  height: 30%;
 }
 
 .desctiption-linksprices {
-    height: 26%;
-    border-radius: 10px;
-    background-color: #EDCDBB;
-    padding: 2%;
+  height: 26%;
+  border-radius: 10px;
+  background-color: #edcdbb;
+  padding: 2%;
 
-    width: 90%;
-    margin: 2% auto;
-    text-align: center;
+  width: 90%;
+  margin: 2% auto;
+  text-align: center;
 }
 
 .descrption-links-wrapper {
-    display: flex;
-    height: 70%;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 @media (min-width: 992px) and (max-width: 1700px) {
-    .section-image {
-      width: 40%;
-    }
-    .description-wrapper {
-        width: 40%;
-    }
+  .section-main-position {
+    justify-content: space-between;
   }
+  .reverse-row {
+    justify-content: space-between;
+  }
+
+  .section-image {
+    width: 45%;
+  }
+  .description-wrapper {
+    width: 45%;
+  }
+}
 
 @media (max-width: 992px) {
-    .section-main-position {
-      flex-direction: column;
-    }
-    .reverse-row {
-        flex-direction: column;
-    }
-    .section-image {
-        width: 100%;
-        height: 50%;
-    }
-    .description-wrapper {
-        width: 100%;
-        height: 50%;
-    }
-
+  .section-main-position {
+    flex-direction: column;
   }
-
+  .reverse-row {
+    flex-direction: column;
+  }
+  .section-image {
+    width: 100%;
+    height: 50%;
+  }
+  .description-wrapper {
+    width: 100%;
+    height: 50%;
+  }
+}

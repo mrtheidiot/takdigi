@@ -7,12 +7,12 @@ import Kontakt from "./components/Kontakt/Kontakt";
 import Asortyment from "./components/Asortyment/Asortyment";
 import OverlayMenu from "./UI/OverlayMenu/OverlayMenu";
 import MainPage from "./components/MainPage/MainPage";
+import Kalendarz from "./components/Kalendarz/Kalendarz";
 import Footer from "./components/Footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleOverlayMenu = () => setMenuOpen((prev) => !prev);
-
   const [trainingTitles, setTrainingTitles] = useState([]);
 
   const getTrainingTitles = async () => {
@@ -40,6 +40,7 @@ function App() {
             <Route exact path="/" element={<MainPage />} />
             <Route exact path="/treningi" element={<Trainings />} />
             <Route exact path="/asortyment" element={<Asortyment />} />
+            <Route exact path="/kalendarz" element={<Kalendarz />} />
             <Route exact path="/kontakt" element={<Kontakt />} />
           </Routes>
         </div>

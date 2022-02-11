@@ -30,7 +30,7 @@ const Kontakt = () => {
         <div className="kontakt__content-info">
           <div className="kontakt-imieiopis">
             <div className="kontakt-imie">Dorota Alewras</div>
-            <div className="kontakt-opis">Certyfikowany trener Obedience.</div>
+            <div className="kontakt-right-desc">Certyfikowany trener Obedience.</div>
           </div>
           <div className="kontakt-adresy">
             <div>

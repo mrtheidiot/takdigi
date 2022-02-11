@@ -1,92 +1,73 @@
 .kontakt__height {
-    height: 86vh;
+  height: 86vh;
 }
 
 .kontakt__container-position {
-    padding-top: 5%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-family: 'Bebas Neue', cursive;
+  padding-top: 5%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
 }
 
 .kontakt__content-info {
-    background-color: #EDCDBB;
-    width: 30%;
-    padding: 2%;
+  background-color: #edcdbb;
+  width: 30%;
+  padding: 2%;
 }
 
 .kontakt__content-links {
-    background-color: #EDCDBB;
-    width: 30%;
-    padding: 2%;
+  background-color: #edcdbb;
+  width: 30%;
+  padding: 2%;
 }
 
 .kontakt-imie {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .kontakt-opis {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.kontakt-right-desc {
+  font-size: 1.5rem;
 }
 
 .kontakt-buttons {
-    margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.kontakt-buttons div {
+  width: 30vh;
+}
+
+@media (max-width: 992px) {
+  .kontakt__container-position {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .kontakt__content-info {
+    width: 100%;
+    background-color: #edcdbb;
+    margin: 0;
+  }
+  .kontakt__content-links {
+    width: 100%;
+    margin: 0;
+  }
+  .kontakt-buttons {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.kontakt-buttons div {
-    width: 30vh;
-}
-
-
-@media (max-width: 992px) {
-    .kontakt__container-position {
-      flex-direction: column;
-      width: 90%;
-      margin: 5% auto;
-      text-align: center;
-    }
-
-    .kontakt__content-info {
-        width: 100%;
-        background-color: #EDCDBB;
-        padding: 12% 0 5% 0;
-        margin: 0;
-    }
-    .kontakt__content-links {
-        width: 100%;
-        margin: 0;
-        padding: 0 0 12% 0;
-    }
-    .kontakt-buttons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* 
 
