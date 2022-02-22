@@ -10,7 +10,7 @@ const Events = () => {
         "Trening na trawce w miłej atmoserze, dodatkowo jest ciepły posiłek.",
       date: "03 Marca 2022",
       description: "",
-      enrolment: "Tutaj jset tekst, ktory sie wyswieli na pop-up",
+      enrollment: "dorotka.alewras@gmail.com",
     },
     {
       title: "Szkoła dla szczeniaczków",
@@ -18,7 +18,15 @@ const Events = () => {
         "Cwiczymy twojego małego od dziecka. (małego pieska oczywiście).",
       date: "08 Kwietnia 2022",
       description: "",
-      enrolment: "Tutaj jset tekst, ktory sie wyswieli na pop-up",
+      enrollment: "biuro@piespotrafi.pl",
+    },
+    {
+      title: "Szkoła dla dużych piesków",
+      subtitle:
+        "Profesjonalnie i kompleksowo - nie wiem co dalej napisać nie znam sie.",
+      date: "08 sierpnia 2022",
+      description: "",
+      enrollment: "biuro@piesniepotrafi.pl",
     },
   ];
 
@@ -30,7 +38,7 @@ const Events = () => {
           subtitle={event.subtitle}
           date={event.date}
           description={event.description}
-          enrolment={event.enrolment}
+          enrollment={event.enrollment}
           key={index}
         />
       ))}

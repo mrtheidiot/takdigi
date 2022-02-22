@@ -3,12 +3,12 @@ import "./EventSection.css";
 import Entollment from "./Entollment";
 
 const EventSection = (props) => {
-  const [enrolmentInfo, setEnrolmentInfo] = useState(false);
-  const handleEnrolmentInfo = () => setEnrolmentInfo((prev) => (!prev));
+  const [enrollmentInfo, setEnrollmentInfo] = useState(false);
+  const handleEnrolmentInfo = () => setEnrollmentInfo((prev) => (!prev));
 
   return (
     <>
-    {enrolmentInfo && <Entollment callback={handleEnrolmentInfo}/>}
+    {enrollmentInfo && <Entollment enrollment={props.enrollment} callback={handleEnrolmentInfo}/>}
     <div className="event__main">
       <div className="event__title">
         <div className="event__heading">{props.title}</div>
