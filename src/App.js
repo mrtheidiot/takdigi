@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.js/NavBar";
 import Trainings from "./components/Trainings/Trainings";
@@ -13,21 +13,15 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleOverlayMenu = () => setMenuOpen((prev) => !prev);
-  const [trainingTitles, setTrainingTitles] = useState([]);
 
-  const getTrainingTitles = async () => {
-    const response = await fetch("/api/trainingtitles/");
-    const data = await response.json();
-    setTrainingTitles(data);
-  };
-
-  useEffect(() => {
-    getTrainingTitles();
-  }, []);
-
+  const trainingTitles = [
+    {title: 'TRENING INDYWIDUALNY', slug: 'trening-indywidualny'},
+    {title: 'TRENING GRUPOWY', slug: 'trening-grupowy'},
+    {title: 'TRENING GHRUPOWY POZ. 2', slug: 'trening-grupowy-poz-2'}
+  ]
   const itemTitles = [
     {title: 'Szarpaki', slug: 'szarpaki'},
-    {title: 'Spódniczki/pasy treningowe', slug: 'sukienki'},
+    {title: 'Spódniczki/pasy treningowe', slug: 'sukienki_oraz_pasy_treningowe'},
   ]
 
   return (

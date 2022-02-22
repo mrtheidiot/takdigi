@@ -4,8 +4,6 @@ from rest_framework.decorators import api_view
 from .serializers import JaimojepsySerializer, GalImgSerializer, TreningSerializer, KontaktSerializer, WydarzenieSerializer, TrainingEventSerializer, TrainingTitlesSerializer
 from .models import JaIMojePsy, GalImg, Trening, Kontakt, Wydarzenie, TrainingEvent
 
-
-
 @api_view(['GET'])
 def getJaimojepsy(request):
     object = JaIMojePsy.objects.get(id=1)
