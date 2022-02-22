@@ -1,18 +1,28 @@
-import React, { useState, useEffect } from "react";
 import TrainingSection from "./TrainingSection";
 import piesek from "./../../assets/p2.jpg";
 import Banner from "../Banner/Banner";
 
 const Trainings = () => {
-  const [trainings, setTrainings] = useState([]);
-  const getTrainings = async () => {
-    const response = await fetch("/api/treningi/");
-    const data = await response.json();
-    setTrainings(data);
-  };
-  useEffect(() => {
-    getTrainings();
-  }, []);
+  const trainings = [
+    {
+      title: "TRENING INDYWIDUALNY",
+      description:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      image: `${piesek}`,
+    },
+    {
+      title: "TRENING GRUPOWY",
+      description:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      image: `${piesek}`,
+    },
+    {
+      title: "TRENING GRUPOWY POZ. 2",
+      description:
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      image: `${piesek}`,
+    },
+  ];
 
   return (
     <>
@@ -32,3 +42,14 @@ const Trainings = () => {
   );
 };
 export default Trainings;
+
+// const [trainings, setTrainings] = useState([]);
+// const getTrainings = async () => {
+//   const response = await fetch("/api/treningi/");
+//   const data = await response.json();
+//   setTrainings(data);
+// };
+// useEffect(() => {
+//   getTrainings();
+// }, []);
+// import React, { useState, useEffect } from "react";

@@ -1,0 +1,26 @@
+.event__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+    font-family: 'Nasalization Rg', sans-serif;
+    background-color: #F9F3DF;
+    min-height: 15vh;
+}
+
+.event__title {
+    width: 50%;
+}
+.event__date {
+    width: 20%;
+    text-align: center;
+}
+.event__links {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.event__heading {
+    font-size: 1.5rem;
+}
