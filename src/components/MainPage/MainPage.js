@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainPage.css";
 import MainPageSection from "./MainPageSection";
+import Banner from "../Banner/Banner";
 
 export const MainPage = () => {
   const sectionContent = [
@@ -82,22 +83,25 @@ export const MainPage = () => {
   ];
 
   return (
-    <div className="mainpage__main">
-      <div className="mainpage__heading">
-        Witaj w Tak to się Obi! Przedstawię Ci stronę, żebyś wiedział o co tu w
-        ogóle chodzi:
+    <>
+      <Banner id={5} />
+      <div className="mainpage__main">
+        <div className="mainpage__heading">
+          Witaj w Tak to się Obi! Przedstawię Ci stronę, żebyś wiedział o co tu
+          w ogóle chodzi:
+        </div>
+        {sectionContent.map((section, index) => (
+          <MainPageSection
+            text1={section.text1}
+            text2={section.text2}
+            buttons={section.buttons}
+            key={index}
+          />
+        ))}
+        <div className="mainpage__heading">Do zobaczenia!</div>
       </div>
-      {sectionContent.map((section, index) => (
-        <MainPageSection
-          text1={section.text1}
-          text2={section.text2}
-          buttons={section.buttons}
-          key={index}
-        />
-      ))}
-      <div className="mainpage__heading">Do zobaczenia!</div>
-    </div>
+    </>
   );
 };
 
-export default MainPage
+export default MainPage;

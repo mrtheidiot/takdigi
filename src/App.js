@@ -26,8 +26,8 @@ function App() {
   }, []);
 
   const itemTitles = [
-    {title: 'szarpaki', slug: 'szarpaki'},
-    {title: 'sukienki', slug: 'sukienki'},
+    {title: 'Szarpaki', slug: 'szarpaki'},
+    {title: 'Spódniczki/pasy treningowe', slug: 'sukienki'},
   ]
 
   return (

@@ -1,5 +1,5 @@
 .reverse-row .desctiption-linksprices {
-  background-color: #f9faef;
+  background-color: #F9F3DF;
 }
 
 .asortymentsection-1 {
@@ -7,16 +7,18 @@
   display: flex;
   padding: 2% 0;
   justify-content: center;
+  border-radius: 20px;
   /* margin: 2% 0; */
 }
 
 .asortymentsection-1-bgchange {
-  background-color: #edcdbb;
+  /* background-color: #F8F0DF; */
+  background-color: #F9F3DF;
 }
 
 .asortymentsection-2 {
   height: 30vh;
-  width: 30%;
+  width: 40%;
   margin: 0 2%;
 }
 
@@ -28,7 +30,7 @@
 }
 
 .asortymentsection-3 {
-  width: 30%;
+  width: 40%;
   margin: 0 2%;
 }
 
