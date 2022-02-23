@@ -15,9 +15,11 @@ function App() {
   const handleOverlayMenu = () => setMenuOpen((prev) => !prev);
 
   const trainingTitles = [
-    { title: "TRENING INDYWIDUALNY", slug: "trening-indywidualny" },
-    { title: "TRENING GRUPOWY", slug: "trening-grupowy" },
-    { title: "TRENING GHRUPOWY POZ. 2", slug: "trening-grupowy-poz-2" },
+    { title: "Trening Indywidualny", slug: "trening-indywidualny" },
+    { title: "Posłuszeństwo z el. obedience", slug: "posluszenstwo-el-obd" },
+    { title: "Obedience 1", slug: "obedience-1" },
+    { title: "Sportowy szczeniak", slug: "sportowy-szczeniak" },
+    { title: "Treningi wspólne", slug: "treningi-wspolne" },
   ];
   const itemTitles = [
     { title: "Szarpaki", slug: "szarpaki" },
