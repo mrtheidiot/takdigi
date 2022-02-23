@@ -1,4 +1,5 @@
 import "./TrainingSection.css";
+import { Link } from "react-router-dom";
 
 const TrainingSection = (props) => {
   const styles1 =
@@ -13,11 +14,16 @@ const TrainingSection = (props) => {
           <img src={props.image} alt={props.title} />
         </div>
         <div className="description-wrapper">
-          <div className="description-title">{props.title}</div>
+          <Link to={props.link}>
+            <div className="description-title">{props.title}</div>
+          </Link>
           <div className="descrption-links-wrapper">
             <div className="description-1">{props.description}</div>
             <div className="desctiption-linksprices">
-              Tu beda linki i ceny - jeszcze do zrobienia
+              <div className="desctiption-organizator">
+                Organizator: {props.organizator}
+              </div>
+              <div className="desctiption-koszt">Koszt: {props.koszt}</div>
             </div>
           </div>
         </div>

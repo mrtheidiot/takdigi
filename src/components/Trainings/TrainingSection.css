@@ -1,6 +1,6 @@
 .reverse-row {
   display: flex;
-  padding: 2% 0;
+  padding: 1% 0;
   width: 80%;
   margin: auto;
   justify-content: space-between;
@@ -25,7 +25,7 @@
   width: 80%;
   display: flex;
   /* height: 50vh; */
-  padding: 2 0%;
+  padding: 1% 0;
   justify-content: space-between;
   margin: 0 auto 2% auto;
 }
@@ -47,32 +47,38 @@
 }
 
 .description-title {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* background-color: rgb(247, 235, 235); */
+  border-radius: 15px;
+  border: solid 1.5px brown;
+  height: 20%;
+  overflow: hidden;
   font-size: 3rem;
   text-align: center;
   font-family: "Teko";
-  height: 27%;
+}
+.description-wrapper a {
+  text-decoration: none;
+  color: black;
 }
 
 .description-1 {
   text-align: center;
   font-family: "Indie Flower", cursive;
-  height: 30%;
 }
 
-.desctiption-linksprices {
-  height: 26%;
+.desctiption-linksprices {  
   border-radius: 10px;
   background-color: #edcdbb;
   padding: 2%;
-
   width: 90%;
-  margin: 2% auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .descrption-links-wrapper {
   display: flex;
-  height: 70%;
+  height: 80%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -87,6 +93,7 @@
 
   .section-image {
     width: 45%;
+    margin: auto;
   }
   .description-wrapper {
     width: 45%;

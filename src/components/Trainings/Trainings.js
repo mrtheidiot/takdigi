@@ -6,21 +6,48 @@ const Trainings = () => {
   const trainings = [
     {
       title: "TRENING INDYWIDUALNY",
+      link: "trening-indywidualny",
       description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "Zajęcia przeznaczone dla pojedynczego teamu przewodnik-pies niezależnie od poziomu zaawansowania. Miejsce spotkania wyznaczamy indywidualnie, ale generalnie spotykamy się 'w terenie'.Program nie jest z góry ustalony - trenujemy to, co jest Wam w tym momencie potrzebne.",
       image: `${piesek}`,
+      organizator: "Tak to się Obi",
+      koszt: "1 spotkanie (ok. 50min.) – 70 zł Pakiet 6 treningów – 380 zł",
     },
     {
-      title: "TRENING GRUPOWY",
+      title: "Posłuszeństwo z el. obedience",
+      link: "posluszenstwo-el-obd",
       description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "Zajęcia grupowe. Psy muszą być minimum na poziomie kursów podstawowego posłuszeństwa. Miejsce spotkań to plac w centrum Szczecina oraz park Kasprowicza. Program jest z góry ustalony – 8 spotkań 1x/tydzień. Ćwiczenia z zakresu kl. 0 z elementami kl. 1.",
       image: `${piesek}`,
+      organizator: "Szkoła na 6 Łap",
+      koszt: "8 spotkań – 550 zł",
     },
     {
-      title: "TRENING GRUPOWY POZ. 2",
+      title: "Obedience 1",
+      link: "obedience-1",
       description:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "Zajęcia grupowe. Team musi mieć ukończony kurs Posłuszeństwo z elementami obedience. Miejsce spotkań to plac w centrum Szczecina oraz park Kasprowicza. Program jest z góry ustalony – 8 spotkań 1x/tydzień. Ćwiczenia z zakresu kl. 0 i 1.",
       image: `${piesek}`,
+      organizator: "Szkoła na 6 Łap",
+      koszt: "8 spotkań – ? zł",
+    },
+    {
+      title: "Sportowy szczeniak",
+      link: "sportowy-szczeniak",
+      description:
+        "Zajęcia grupowe przeznaczone dla szczeniąt w wieku do 5 miesięcy, z którymi właściciele planują sportowe życie. Nie ma znaczenia jakim sportem kynologicznym (czyli psim) chcecie się zająć. Miejsce spotkań to plac w centrum Szczecina. Program jest z góry ustalony – 8 spotkań 1x/tydzień.",
+      image: `${piesek}`,
+      organizator: "Szkoła na 6 Łap",
+      koszt: "8 spotkań – 550 zł",
+    },
+    {
+      title: "Treningi wspólne",
+      link: "treningi-wspolne",
+      description:
+        "Zajęcia grupowe, podczas których „każdy sobie rzepkę skrobie” – Wy ćwiczycie ze swoimi psami, ja ze swoimi. Takie spotkania mają na celu trening w otoczeniu innych psów i ludzi oraz wykorzystanie ich do tzw. overów. Miejsce spotkań jest takie, na jakie się umówimy. W zimie wynajmujemy halę. Częstotliwość spotkań – jaka komu pasuje :)",
+      image: `${piesek}`,
+      organizator: "Tak to się Obi",
+      koszt: "6 spotkań – 150 zł  + zimą koszt wynajęcia hali, którym się dzielimy",
     },
   ];
 
@@ -31,8 +58,11 @@ const Trainings = () => {
         {trainings.map((trening, index) => (
           <TrainingSection
             title={trening.title}
+            link={trening.link}
             description={trening.description}
             image={piesek}
+            organizator={trening.organizator}
+            koszt={trening.koszt}
             ifReverse={index % 2 === 0 ? 0 : 1}
             key={index}
           />
