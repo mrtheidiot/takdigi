@@ -21,6 +21,7 @@ function App() {
     { title: "Sportowy szczeniak", slug: "sportowy-szczeniak" },
     { title: "Treningi wspólne", slug: "treningi-wspolne" },
   ];
+  
   const itemTitles = [
     { title: "Szarpaki", slug: "szarpaki" },
     {
