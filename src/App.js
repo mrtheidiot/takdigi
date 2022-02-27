@@ -10,6 +10,9 @@ import MainPage from "./components/MainPage/MainPage";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
 import Indywidualny from "./components/Treningi/Indywidualny";
+import Posluszenstwo from "./components/Treningi/Posluszenstwo";
+import Obedience_1 from "./components/Treningi/Obedience_1";
+import SportowySzczeniak from "./components/Treningi/SportowySzczeniak";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,9 +20,9 @@ function App() {
 
   const trainingTitles = [
     { title: "Trening Indywidualny", slug: "treningi/trening-indywidualny" },
-    { title: "Posłuszeństwo z el. obedience", slug: "posluszenstwo-el-obd" },
-    { title: "Obedience 1", slug: "obedience-1" },
-    { title: "Sportowy szczeniak", slug: "sportowy-szczeniak" },
+    { title: "Posłuszeństwo z el. obedience", slug: "treningi/posluszenstwo-el-obd" },
+    { title: "Obedience 1", slug: "treningi/obedience-1" },
+    { title: "Sportowy szczeniak", slug: "treningi/sportowy-szczeniak" },
     { title: "Treningi wspólne", slug: "treningi-wspolne" },
   ];
   
@@ -49,6 +52,9 @@ function App() {
               <Route exact path="/kalendarz" element={<Events />} />
               <Route exact path="/kontakt" element={<Kontakt />} />
               <Route path="/treningi/trening-indywidualny" element={<Indywidualny />} />
+              <Route path="/treningi/posluszenstwo-el-obd" element={<Posluszenstwo />} />
+              <Route path="/treningi/obedience-1" element={<Obedience_1 />} />
+              <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
             </Routes>
           </div>
         </Router>

@@ -3,14 +3,14 @@
     margin: 1% 0;
 }
 
-.galeria_position {
-    
-}
-
 .trening_main {
     margin-bottom: 3%;
 }
 
 h1 {
     font-size: 3rem;
+}
+
+.opis_kursu {
+    text-align: left;
 }
