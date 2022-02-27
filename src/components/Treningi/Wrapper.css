@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: local('Nasalization'),
+         url('./../../fonts/nasalization-rg.otf') format('opentype');
+    /* font-weight: bold; */
+  }
+
+.treningi__wrapper {
+    width: 80%;
+    margin: 2% auto;
+    font-family: Nasalization;
+    text-align: center;
+
+}

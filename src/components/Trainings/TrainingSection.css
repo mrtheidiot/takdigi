@@ -1,11 +1,20 @@
+@font-face {
+  font-family: 'Nasalization';
+  src: local('Nasalization'),
+       url('./../../fonts/nasalization-rg.otf') format('opentype');
+  /* font-weight: bold; */
+}
+
 .reverse-row {
   display: flex;
   padding: 1% 0;
   width: 80%;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row-reverse;
   margin: 0 auto 2% auto;
+  font-family: Nasalization;
+  /* height: auto; */
 }
 
 .reverse-row .desctiption-linksprices {
@@ -14,13 +23,17 @@
 
 .section-wrapper-1 {
   width: 100%;
+  /* height: auto; */
+
 }
 
 .section-wrapper-2 {
   width: 100%;
   background-color: #edcdbb;
-}
+  /* height: auto; */
 
+}
+                                      
 .section-main-position {
   width: 80%;
   display: flex;
@@ -28,10 +41,13 @@
   padding: 1% 0;
   justify-content: space-between;
   margin: 0 auto 2% auto;
+  font-family: Nasalization;
+  /* height: auto; */
 }
 .section-image {
   height: 100%;
   width: 49%;
+  margin: auto;
 }
 
 .section-image img {
@@ -47,16 +63,22 @@
 }
 
 .description-title {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* background-color: rgb(247, 235, 235); */
-  border-radius: 15px;
-  border: solid 1.5px brown;
-  height: 20%;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  transition: ease-in-out 0.2s opacity;
+  transition: ease 0.1s transform;
+  /* height: 20%; */
   overflow: hidden;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
-  font-family: "Teko";
+  min-height: 20%;
+  /* font-family: "Teko"; */
 }
+
+.description-title:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 .description-wrapper a {
   text-decoration: none;
   color: black;
@@ -64,21 +86,21 @@
 
 .description-1 {
   text-align: center;
-  font-family: "Indie Flower", cursive;
+  /* font-family: "Indie Flower", cursive; */
 }
 
 .desctiption-linksprices {  
   border-radius: 10px;
   background-color: #edcdbb;
   padding: 2%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 .descrption-links-wrapper {
   display: flex;
-  height: 80%;
+  height: 70%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -86,17 +108,19 @@
 @media (min-width: 992px) and (max-width: 1700px) {
   .section-main-position {
     justify-content: space-between;
+    width: 90%;
   }
   .reverse-row {
     justify-content: space-between;
+    width: 90%;
   }
 
   .section-image {
-    width: 45%;
+    width: 40%;
     margin: auto;
   }
   .description-wrapper {
-    width: 45%;
+    width: 50%;
   }
 }
 

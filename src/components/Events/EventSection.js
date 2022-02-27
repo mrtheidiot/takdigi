@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./EventSection.css";
+// import './../../fonts/nasalization-rg.otf';
 import Entollment from "./Entollment";
 
 const EventSection = (props) => {

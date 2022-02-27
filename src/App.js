@@ -9,13 +9,14 @@ import OverlayMenu from "./UI/OverlayMenu/OverlayMenu";
 import MainPage from "./components/MainPage/MainPage";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
+import Indywidualny from "./components/Treningi/Indywidualny";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleOverlayMenu = () => setMenuOpen((prev) => !prev);
 
   const trainingTitles = [
-    { title: "Trening Indywidualny", slug: "trening-indywidualny" },
+    { title: "Trening Indywidualny", slug: "treningi/trening-indywidualny" },
     { title: "Posłuszeństwo z el. obedience", slug: "posluszenstwo-el-obd" },
     { title: "Obedience 1", slug: "obedience-1" },
     { title: "Sportowy szczeniak", slug: "sportowy-szczeniak" },
@@ -47,6 +48,7 @@ function App() {
               <Route exact path="/asortyment" element={<Asortyment />} />
               <Route exact path="/kalendarz" element={<Events />} />
               <Route exact path="/kontakt" element={<Kontakt />} />
+              <Route path="/treningi/trening-indywidualny" element={<Indywidualny />} />
             </Routes>
           </div>
         </Router>
