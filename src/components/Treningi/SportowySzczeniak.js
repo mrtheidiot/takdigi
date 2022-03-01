@@ -16,25 +16,32 @@ const SportowySzczeniak = () => {
   ];
 
   const zajecia = [
-      "- podstawy pracy z klikerem,",
-      "- nauka skupienia uwagi na opiekunie,",
-      "- podstawowe komendy,",
-      "- luźna smycz,",
-      "- ćwiczenia budujące pewność siebie i świadomość własnego ciała,",
-      "- ćwiczenia stymulujące psie zmysły,",
-      "- nauka opanowania emocji przy innych psach,",
-      "- sygnały nagród,",
-      "- rezygnacja,",
-      "- podążanie,",
-      "- przynoszenie zabawki,",
-      "- sztuczki rozgrzewkowe.",
-  ]
-
-                        
+    "- podstawy pracy z klikerem,",
+    "- nauka skupienia uwagi na opiekunie,",
+    "- podstawowe komendy,",
+    "- luźna smycz,",
+    "- ćwiczenia budujące pewność siebie i świadomość własnego ciała,",
+    "- ćwiczenia stymulujące psie zmysły,",
+    "- nauka opanowania emocji przy innych psach,",
+    "- sygnały nagród,",
+    "- rezygnacja,",
+    "- podążanie,",
+    "- przynoszenie zabawki,",
+    "- sztuczki rozgrzewkowe.",
+  ];
+  const zapisy = [
+    "Zapisy i pytania: biuro@piespotrafi.pl",
+    "W treści maila podaj:",
+    "- imię i nazwisko,",
+    "- rasę, imię i wiek psa; w przypadku mieszańców prosimy o podanie gabarytów,",
+    "- czy pies sprawia jakieś problemy z zachowaniem (krótki opis),",
+    "- numer telefonu,",
+    '- koniecznie dopiskiem "Sportowy Szczeniak Szczecin”.',
+  ];
 
   return (
     <Wrapper>
-      <h1>Posłuszeństwo z elementami Obedience</h1>
+      <h1>Sportowy Szczeniak</h1>
       {trening.map((trening, index) => (
         <div className="trening_textarea" key={index}>
           {trening}
@@ -46,7 +53,33 @@ const SportowySzczeniak = () => {
         <a href="https://www.google.pl">Kalendarz szkoleń</a> lub{" "}
         <a href="https://www.facebook.com">fb szkoły</a>.
       </div>
-
+      <div className="opis_kursu">
+        W programie:
+        <br></br>
+        <br></br>- teoretyczne omówienie najczęstszych problemów przy wychowaniu
+        szczeniaka, technik szkoleniowych, metod oswajania szczeniaka z
+        zabiegami pielęgnacyjnymi, samotnym pozostawaniem w domu, jazdą
+        samochodem etc. (forma on-line - webinar); omówenie podstaw treningu
+        kennelowego i nauki wyciszenia.
+      </div>
+      <br></br>
+      <div className="opis_kursu">Zajęcia praktyczne:</div>
+      <br></br>
+      {zajecia.map((zajecia, index) => (
+        <div className="opis_kursu" key={index}>
+          {zajecia}
+        </div>
+      ))}
+      <br></br>
+      <div className="opis_kursu">
+        Cena kursu: 550zł (1 spotkanie teoretyczne on-line i 7 spotkań
+        praktycznych w grupie psów w centrum Szczecina) Pierwsze spotkanie
+        (webinar on-line) trwa ok 1.5 godziny, praktyczne spotkania trwają ok.
+        50 minut.
+      </div>
+      <div className="trening_textarea">Organizator: Szkoła na 6 Łap</div>
+      <div className="trening_textarea">Koszt: 8 spotkań - 550zł</div>
+      <Galeria dogo1={dogo1} dogo2={dogo2} />
     </Wrapper>
   );
 };

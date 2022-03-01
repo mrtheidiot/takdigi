@@ -49,13 +49,17 @@ const Posluszenstwo = () => {
     "Zajęcia przewidziane są na soboty.",
     "Kurs przeznaczony dla psów, które ukończyły szkolenie z zakresu posłuszeństwa podstawowego.",
   ];
+  
   const zapisy = [
     "Zapisy i pytania: biuro@piespotrafi.pl",
-    "W treści maila podaj:  - imię i nazwisko,  - rasę, imię i wiek psa; w przypadku mieszańców prosimy o podanie gabarytów,",
+    "W treści maila podaj:",
+    "- imię i nazwisko,",
+    "- rasę, imię i wiek psa; w przypadku mieszańców prosimy o podanie gabarytów,",
     "- czy pies sprawia jakieś problemy z zachowaniem (krótki opis),",
     "- numer telefonu,",
     '- koniecznie dopiskiem "II stopień z el. Obi Szczecin”.',
   ];
+
   const uczestnicy = [
     "Uczestnicy powinni mieć ze sobą:",
     "- dużo smakołyków dla psa, najlepiej różnego rodzaju,",
