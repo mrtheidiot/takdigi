@@ -15,6 +15,8 @@ const EventSection = (props) => {
           callback={handleEnrolmentInfo}
         />
       )}
+      <div className="event_position">
+
       <div className="event__main">
         <div className="event__title">
           <div className="event__heading">{props.title}</div>
@@ -22,11 +24,10 @@ const EventSection = (props) => {
         </div>
         <div className="event__info">
           <div className="event__date">{props.date}</div>
-          <div className="event__links">
             <div>OPIS</div>
             <div onClick={handleEnrolmentInfo}>ZAPISY</div>
-          </div>
         </div>
+      </div>
       </div>
     </>
   );

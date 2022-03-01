@@ -17,21 +17,15 @@ const TrainingSection = (props) => {
           <Link to={props.link}>
             <div className="description-title">{props.title}</div>
           </Link>
-          <div className="descrption-links-wrapper">
+          
             <div className="description-1">
-              {props.description.map((desc, index) => (
-                <div key={index}> 
-                  {desc}
-                </div>
-              ))}
+              {props.description.map((desc, index) => (<div key={index}>{desc}</div>))}
             </div>
             <div className="desctiption-linksprices">
-              <div className="desctiption-organizator">
-                Organizator: {props.organizator}
-              </div>
+              <div className="desctiption-organizator">Organizator: {props.organizator}</div>
               <div className="desctiption-koszt">Koszt: {props.koszt}</div>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>

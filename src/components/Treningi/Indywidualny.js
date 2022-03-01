@@ -33,11 +33,11 @@ const Indywidualny = () => {
           Program nie jest z góry ustalony - trenujemy to, co jest Wam w danym
           momencie potrzebne (oczywiście w obrębie zagadnień obedience).
         </div>
-        <div className="trening_textarea">Organizator: Tak To Się Obi!</div>
+        <div className="trening_textarea">Organizator: Tak to się Obi</div>
         <div className="trening_textarea">
-          Koszt: 1 spotkanie (ok. 50 min) - 70 zika
+          Koszt: 1 spotkanie (ok. 50 min) - 70 zł
         </div>
-        <div className="trening_textarea">Pakiet 6 treningów: 380 zł.</div>
+        <div className="trening_textarea">Pakiet 6 treningów: 380 zł</div>
       </div>
       <div className="galeria_position">
 

@@ -1,6 +1,8 @@
-.event__wrapper {
-    margin-top: 5vh;
-  
-}
+.upcoming_events {
+    width: 90%;
+    margin: 5vh auto 4vh auto;
+    font-size: 3rem;
+    font-family: Nasalization;
 
+}
 

@@ -31,18 +31,23 @@ const Events = () => {
   ];
 
   return (
+    <>
+    <div className="upcoming_events">
+      Ndchodzące wydarzenia:
+    </div>
     <div className="event__wrapper">
       {events.map((event, index) => (
         <EventSection
-          title={event.title}
-          subtitle={event.subtitle}
-          date={event.date}
-          description={event.description}
-          enrollment={event.enrollment}
-          key={index}
+        title={event.title}
+        subtitle={event.subtitle}
+        date={event.date}
+        description={event.description}
+        enrollment={event.enrollment}
+        key={index}
         />
-      ))}
+        ))}
     </div>
+        </>
   );
 };
 
