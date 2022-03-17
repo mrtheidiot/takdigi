@@ -1,0 +1,7 @@
+.imageItem__image {
+    height: 30vh;
+}
+
+.imageItem__image img {
+    height: 100%;
+}

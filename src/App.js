@@ -13,6 +13,7 @@ import Indywidualny from "./components/Treningi/Indywidualny";
 import Posluszenstwo from "./components/Treningi/Posluszenstwo";
 import Obedience_1 from "./components/Treningi/Obedience_1";
 import SportowySzczeniak from "./components/Treningi/SportowySzczeniak";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
               <Route exact path="/asortyment" element={<Asortyment />} />
               <Route exact path="/kalendarz" element={<Events />} />
               <Route exact path="/kontakt" element={<Kontakt />} />
+              <Route exact path="/omnie" element={<AboutMe />} />
               <Route path="/treningi/trening-indywidualny" element={<Indywidualny />} />
               <Route path="/treningi/posluszenstwo-el-obd" element={<Posluszenstwo />} />
               <Route path="/treningi/obedience-1" element={<Obedience_1 />} />

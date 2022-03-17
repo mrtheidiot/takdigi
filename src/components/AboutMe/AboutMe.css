@@ -1,0 +1,22 @@
+.aboutme__main {
+    width: 80%;
+    margin: auto;
+    font-family: Nasalization;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+}
+
+.aboutme__title {
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+.aboutme__textarea {
+    width: 70%;
+}
+
+.aboutme__picturearea {
+    width: 30%;
+    border: solid 1px black;
+}
