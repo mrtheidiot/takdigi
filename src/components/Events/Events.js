@@ -33,7 +33,7 @@ const Events = () => {
   return (
     <>
     <div className="upcoming_events">
-      Ndchodzące wydarzenia:
+      Nadchodzące wydarzenia:
     </div>
     <div className="event__wrapper">
       {events.map((event, index) => (

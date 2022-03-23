@@ -8,11 +8,13 @@ const Trainings = () => {
       title: "TRENING INDYWIDUALNY",
       link: "trening-indywidualny",
       description: [
-        "Zajęcia przeznaczone dla pojedynczego teamu przewodnik-pies niezależnie od poziomu zaawansowania.", "Miejsce spotkania wyznaczamy indywidualnie, ale generalnie spotykamy się 'w terenie'.", "Program nie jest z góry ustalony - trenujemy to, co jest Wam w tym momencie potrzebne.",
+        "Zajęcia przeznaczone dla pojedynczego teamu przewodnik-pies niezależnie od poziomu zaawansowania.", "Miejsce spotkania wyznaczamy indywidualnie, ale generalnie spotykamy się w terenie.",
+        "Program nie jest z góry ustalony - trenujemy to, co jest Wam w tym momencie potrzebne.",
       ],
         image: `${piesek}`,
       organizator: "Tak to się Obi",
-      koszt: "1 spotkanie (ok. 50min.) – 70 zł Pakiet 6 treningów – 380 zł",
+      koszt: "1 spotkanie (ok. 50min.) – 70 zł",
+      koszt2: "Pakiet 6 treningów – 380 zł"
     },
     {
       title: "Posłuszeństwo z el. obedience",
@@ -53,7 +55,9 @@ const Trainings = () => {
       ],
       image: `${piesek}`,
       organizator: "Tak to się Obi",
-      koszt: "6 spotkań – 150 zł  + zimą koszt wynajęcia hali, którym się dzielimy",
+      koszt: "1 spotkanie (1h) - 30zł",
+      koszt2: "6 spotkań – 150 zł",
+      koszt3: "+ zimą koszt wynajęcia hali, którym się dzielimy",
     },
   ];
 
@@ -69,6 +73,8 @@ const Trainings = () => {
             image={piesek}
             organizator={trening.organizator}
             koszt={trening.koszt}
+            koszt2={trening.koszt2}
+            koszt3={trening.koszt3}
             ifReverse={index % 2 === 0 ? 0 : 1}
             key={index}
           />

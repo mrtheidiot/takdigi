@@ -19,30 +19,19 @@ export const MainPage = () => {
       text2:
         "Prowadzę treningi indywidualne oraz grupowe teamów na różnym poziomie zaawansowania – tym zajmuję się w ramach mojej szkoły, która nazywa się Tak to się Obi.",
     },
+
     {
       buttons: [
         {
           preLink: 2,
           category: "Facebook",
           internal: 0,
-          link: "https://www.facebook.pl",
+          link: "https://www.facebook.com/PiesPotrafi",
         },
+        { preLink: 1, category: "PiesPotrafi.pl", internal: 0, link: "https://www.piespotrafi.pl" },
       ],
       text1:
-        "Witaj w Tak to się Obi! Przedstawię Ci stronę, żebyś wiedział o co tu w ogóle chodzi:  Nazywam się Dorota Alewras (więcej o mnie i o moich psach tutaj). Jestem przede wszystkim trenerem Obedience, czyli sportowego posłuszeństwa. Skoro tu trafiłeś, pewnie wiesz mniej więcej co to za sport, więc nie będę się tu wdawać w szczegóły. Jesteś swój.  Prowadzę treningi indywidualne oraz grupowe teamów na różnym poziomie zaawansowania – tym zajmuję się w ramach mojej szkoły, która nazywa się Tak to się Obi.",
-    },
-    {
-      buttons: [
-        {
-          preLink: 2,
-          category: "Facebook",
-          internal: 0,
-          link: "https://www.facebook.pl",
-        },
-        { preLink: 1, category: "Treningi", internal: 1, link: "/treningi" },
-      ],
-      text1:
-        "Niektóre kursy i wydarzenia prowadzę z ramienia szkoły, z którą współpracuję od 2018 roku – Szkoła na 6 Łap w Szczecinie. Tam zobaczycie mnie jak prowadzę zajęcia grupowe z posłuszeństwa na co dzień, przedszkola dla papisiów oraz konsultacje i treningi indywidualne w przypadku problemów na linii właściciel-pies",
+        "Niektóre kursy i wydarzenia prowadzę z ramienia szkoły, z którą współpracuję od 2018 roku – Szkoła na 6 Łap Piespotrafi.pl w Szczecinie. Tam zobaczycie mnie jak prowadzę zajęcia grupowe z posłuszeństwa na co dzień, przedszkola dla papisiów oraz konsultacje i treningi indywidualne w przypadku problemów na linii właściciel-pies.",
     },
     {
       buttons: [

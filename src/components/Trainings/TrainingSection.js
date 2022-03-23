@@ -24,8 +24,10 @@ const TrainingSection = (props) => {
             <div className="desctiption-linksprices">
               <div className="desctiption-organizator">Organizator: {props.organizator}</div>
               <div className="desctiption-koszt">Koszt: {props.koszt}</div>
+              {props.koszt2 && props.koszt2}
+              <br></br>
+              {props.koszt3 && props.koszt3}
             </div>
-          
         </div>
       </div>
     </div>

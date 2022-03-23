@@ -1,8 +1,9 @@
 .mainpage__main {
-  background-color: #EDCDBB;
+  background-color: #f9faef;
   font-family: 'Teko';
   font-size: 1.5rem;
   padding-bottom: 2%;
+
 }
 
 .mainpage__heading {
@@ -12,3 +13,14 @@
   padding: 1% 0;
   text-align: center;
 }
+
+/* polubione kolory 
+background-color: #faeee7; 
+background-color: #fff8f3;
+background-color: #f8f0df;
+
+
+
+
+
+*/
