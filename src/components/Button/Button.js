@@ -23,7 +23,7 @@ const Button = (props) => {
     </div>
   ) : (
     <div className="button__main">
-      <a href={props.button.link}>
+      <a href={props.button.link} target="_blank" rel="noreferrer noopener">
         <div className={`button__sub ${classTitle}`}>
           {props.button.category}
         </div>

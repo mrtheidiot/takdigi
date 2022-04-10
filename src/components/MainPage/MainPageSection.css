@@ -19,6 +19,9 @@
 .mainpagesection__text {
   text-align: center;
 }
+.mainpagesection__text a {
+  color: black;
+}
 
 .mainpagesection__text div {
   margin-top: 1%;

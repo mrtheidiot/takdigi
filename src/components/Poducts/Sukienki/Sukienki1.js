@@ -1,25 +1,20 @@
-import Banner from "../Banner/Banner";
-import "./Asortyment.css";
-import szarpaki from "./../../assets/szarpaki.jpg";
-import spodniczka from "./../../assets/spdnczka3.jpg";
+import React from 'react'
+import classes from '.Sukienki1.module.css';
+import Sukienki2 from './Sukienki2';
 
-import AsortymentSection from "./AsortymentSection";
-
-const Asortyment = () => {
+const Sukienki1 = () => {
   const items = [
     {
       title: "Szarpaki",
       description:
         '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."',
       zdj: `${szarpaki}`,
-      link: "/asortyment/szarpaki"
     },
     {
       title: "Spódniczki/pasy treningowe",
       description:
         '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."',
       zdj: `${spodniczka}`,
-      link: "/asortyment/sukienki"
     },
   ];
 
@@ -34,7 +29,6 @@ const Asortyment = () => {
               description={trening.description}
               image={trening.zdj}
               ifReverse={index % 2 === 0 ? 0 : 1}
-              link={trening.link}
               key={index}
             />
           ))}
@@ -42,6 +36,6 @@ const Asortyment = () => {
       </>
     </>
   );
-};
+}
 
-export default Asortyment;
+export default Sukienki1

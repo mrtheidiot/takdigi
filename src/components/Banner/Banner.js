@@ -7,6 +7,7 @@ import dog2 from "./../../assets/dogo2.jpg";
 import dog3 from "./../../assets/dogo3.jpg";
 import dog4 from "./../../assets/p4.jpg";
 import dog5 from "./../../assets/dogo4.png";
+import dog6 from './../../assets/rivia/r1.jpg';
 
 const Banner = (props) => {
   const banners = [
@@ -15,6 +16,7 @@ const Banner = (props) => {
     { img: `${dog3}`, alt: "piesek", id: 3 },
     { img: `${dog4}`, alt: "piesek", id: 4 },
     { img: `${dog5}`, alt: "piesek", id: 5 },
+    { img: `${dog6}`, alt: "piesek", id: 6 }
   ];
   const { img, alt } = Object.values(banners).filter(
     (baner) => baner.id === props.id
