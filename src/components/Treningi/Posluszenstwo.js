@@ -77,8 +77,7 @@ const Posluszenstwo = () => {
         </div>
       ))}
       <div className="trening_textarea">
-        Nabory są organizowane regularnie - o najbliższy kurs można zapytać
-        mnie, spojrzeć w nasz <Link to="/kalendarz">Kalendarz</Link>, śledzić{" "}
+        Nabory są organizowane regularnie - o najbliższy kurs można zapytać <Link to="/kontakt">mnie</Link>, spojrzeć w nasz <Link to="/kalendarz">Kalendarz</Link>, śledzić{" "}
         <a href="https://www.google.pl">Kalendarz szkoleń</a> lub{" "}
         <a href="https://www.facebook.com">fb szkoły</a>.
       </div>

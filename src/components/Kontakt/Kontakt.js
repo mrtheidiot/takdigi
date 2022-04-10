@@ -2,6 +2,10 @@ import "./kontakt.css";
 import profilepic from "./../../assets/profilepic.jpg";
 import Button from "../Button/Button";
 
+import dogo1 from './../../assets/p1.jpg'
+import dogo2 from './../../assets/p2.jpg'
+import Gallery from "../Gallery/Gallery";
+
 const Kontakt = () => {
   const buttons = [
     {
@@ -23,6 +27,11 @@ const Kontakt = () => {
       link: "/kontakt",
     },
   ];
+
+  const dogs = [
+    {img: `${dogo1}`, alt: "alt", id: 1},
+    {img: `${dogo1}`, alt: "alt", id: 2},
+  ]
 
   return (
     <div className="kontakt__height">
@@ -56,6 +65,7 @@ const Kontakt = () => {
           </div>
         </div>
       </div>
+      {/* <Gallery imgs={dogs} /> */}
     </div>
   );
 };

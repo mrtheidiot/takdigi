@@ -1,7 +1,18 @@
 .imageItem__image {
-    height: 30vh;
+    border-radius: 10px;
+    height: 20vh;
+    width: 100%;
 }
 
+
 .imageItem__image img {
+    object-fit: cover;
     height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s all;
+}
+
+.imageItem__image img:hover {
+    transform: scale(1.05);
 }

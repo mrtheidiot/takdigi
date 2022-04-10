@@ -1,14 +1,37 @@
 import React from "react";
 import classes from "./AboutMe.module.css";
 import ImageItem from "../../UI/ImageItem/ImageItem";
-import dogo1 from "./../../assets/dyplom.jpg";
-import Gallery from "../Treningi/Galeria";
 import dorotka from "./../../assets/dorotka.jpg";
-import piesio from "./../../assets/piesio.jpg";
-import plaza from "./../../assets/plaza.png";
+import rivia from "./../../assets/plaza.png";
+import Banner from "../Banner/Banner";
+
+import d1 from "./../../assets/dyplomy/d1.jpeg";
+import d2 from "./../../assets/dyplomy/d2.jpg";
+import d3 from "./../../assets/dyplomy/d3.jpg";
+import d4 from "./../../assets/dyplomy/d4.jpg";
+import d5 from "./../../assets/dyplomy/d5.jpg";
+import d6 from "./../../assets/dyplomy/d6.jpg";
+import d7 from "./../../assets/dyplomy/d7.png";
+import d8 from "./../../assets/dyplomy/d8.jpg";
+import d9 from "./../../assets/dyplomy/d9.png";
+import d10 from "./../../assets/dyplomy/d10.jpg";
+
+import r1 from './../../assets/rivia/r1.jpg';
+import r2 from './../../assets/rivia/r2.jpg';
+import r3 from './../../assets/rivia/r3.jpg';
+import r4 from './../../assets/rivia/r4.jpg';
+import r5 from './../../assets/rivia/r5.jpg';
+import r6 from './../../assets/rivia/r6.jpg';
+import r7 from './../../assets/rivia/r7.jpg';
+import r8 from './../../assets/rivia/r8.png';
+import r9 from './../../assets/rivia/r9.png';
+import r10 from './../../assets/rivia/r10.png';
+
 
 const AboutMe = () => {
   return (
+    <>
+    <Banner id={6}/>
     <div className={classes.wrapper}>
       <div className={classes.naglowek}>
         <div className={classes.nag1}>Ja i Moje Psy</div>
@@ -78,9 +101,94 @@ const AboutMe = () => {
         <div className={classes.content_picture}>
           <img src={dorotka} />
         </div>
-        <div className={classes.gallery}></div>
       </div>
+      <div className={classes.gallery__wrapper}>
+        <div className={classes.gallery}>
+          <ImageItem img={d7} alt="alt" />
+          <ImageItem img={d2} alt="alt" />
+          <ImageItem img={d3} alt="alt" />
+          <ImageItem img={d8} alt="alt" />
+          <ImageItem img={d9} alt="alt" />
+        </div>
+        <div className={classes.gallery}>
+          <ImageItem img={d6} alt="alt" />
+          <ImageItem img={d1} alt="alt" />
+
+          <ImageItem img={d4} alt="alt" />
+          <ImageItem img={d5} alt="alt" />
+          <ImageItem img={d10} alt="alt" />
+        </div>
+      </div>
+      <div className={classes.naglowek}>
+        <div className={classes.nag1}>RIVIA:</div>
+        <div className={classes.nag2}></div>
+        <br></br>
+        <div className={classes.nag3}>
+          ANIMA DE RIVIA Natalaland „Rivia” (dla przyjaciół Buba).
+        </div>
+      </div>
+      <br></br>
+      <div className={classes.content_wrapper}>
+        <div className={classes.content_text}>
+          <div className={classes.text}>
+            Przepiękna, mądra sunia, która miała być miszczem obedience, ale
+            chyba nie będzie. Mój pierwszy pies nie licząc najwspanialszego
+            jamnika Floyda, z którym się wychowałam. Tego bezskutecznie
+            próbowałam nauczyć podawać łapę i kto wie - może to właśnie ta
+            porażka dydaktyczna obudziła we mnie determinację do uprawiania
+            sportowego posłuszeństwa?
+          </div>
+          <br></br>
+          <div className={classes.text}>
+            Z Rivią amatorsko próbowałyśmy większości znanych mi aktywności, tj.
+            obedience, pasienie, agility, frisbee, fitness. Generalnie we
+            wszystkim jest dobra, ale póki co w niczym wybitna. Planuję dalej
+            szukać czegoś, co będzie dla niej przyjemnością, ale nie odpuścimy
+            sobie obi. Osiągniemy coś lub nie, ale będziemy walczyć i bawić się
+            treningami. Na ten moment mamy na koncie start w zawodach
+            treningowych, na których stwierdzono u niej „potencjał”.
+          </div>
+          <br></br>
+          <div className={classes.text}>
+            Na pewno bardzo dużo mnie ten pies nauczył, pomimo umiarkowanego
+            will to please i względnej bezproblemowości, ma swoje za uszami.
+            Największym naszym wyzwaniem w pracy jest szybka eskalacja
+            frustracji i ogólnie praca z emocjami w treningu, więc na ten temat
+            już mam potężne doświadczenie dzięki niej.
+          </div>
+          <br></br>
+          <div className={classes.text}>
+            Życiowo jest wspaniałym towarzyszem, bardzo delikatna z natury -
+            prawdziwa dama. Zobaczymy, dokąd nas poniesie ta wspólna droga :)
+          </div>
+          <br></br>
+        </div>
+        <div className={classes.content_picture}>
+          <img src={rivia} />
+        </div>
+      </div>
+      <div className={classes.gallery__wrapper}>
+      <div className={classes.gallery}>
+      <ImageItem img={r5} alt="alt" />
+        <ImageItem img={r2} alt="alt" />
+        <ImageItem img={r3} alt="alt" />
+        <ImageItem img={r4} alt="alt" />
+        <ImageItem img={r9} alt="alt" />
+      </div>
+      <div className={classes.gallery}>
+      <ImageItem img={r1} alt="alt" />
+        
+        <ImageItem img={r6} alt="alt" />
+        <ImageItem img={r7} alt="alt" />
+        <ImageItem img={r8} alt="alt" />
+        <ImageItem img={r10} alt="alt" />
+        
+      </div>
+      </div>
+      <br></br>
+      <br></br>
     </div>
+    </>
   );
 };
 

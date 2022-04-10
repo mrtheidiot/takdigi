@@ -1,4 +1,5 @@
 import "./AsortymentSection.css";
+import { Link } from "@mui/material";
 
 const AsortymentSection = (props) => {
   const styles2 =
@@ -11,7 +12,9 @@ const AsortymentSection = (props) => {
           <img src={props.image} alt={props.title} />
         </div>
         <div className="asortymentsection-3">
+          <Link to={props.link}>
           <div className="asortymentsection-4">{props.title}</div>
+          </Link>
           <div className="asortymentsection-5">
             <div className="asortymentsection-6">{props.description}</div>
             <div className={styles3}>

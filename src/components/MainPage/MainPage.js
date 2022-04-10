@@ -1,25 +1,12 @@
 import React from "react";
 import "./MainPage.css";
 import MainPageSection from "./MainPageSection";
+import MainPageSection2 from "./MainPageSection2";
 import Banner from "../Banner/Banner";
+
 
 export const MainPage = () => {
   const sectionContent = [
-    {
-      buttons: [
-        {
-          preLink: 1,
-          category: "Treningi",
-          internal: 1,
-          link: "/treningi",
-        },
-      ],
-      text1:
-        "Nazywam się Dorota Alewras (więcej o mnie i o moich psach tutaj). Jestem przede wszystkim trenerem Obedience, czyli sportowego posłuszeństwa. Skoro tu trafiłeś, pewnie wiesz mniej więcej co to za sport, więc nie będę się tu wdawać w szczegóły. Jesteś swój.",
-      text2:
-        "Prowadzę treningi indywidualne oraz grupowe teamów na różnym poziomie zaawansowania – tym zajmuję się w ramach mojej szkoły, która nazywa się Tak to się Obi.",
-    },
-
     {
       buttons: [
         {
@@ -79,6 +66,7 @@ export const MainPage = () => {
           Witaj w Tak to się Obi! Przedstawię Ci stronę, żebyś wiedział o co tu
           w ogóle chodzi:
         </div>
+        <MainPageSection2 />
         {sectionContent.map((section, index) => (
           <MainPageSection
             text1={section.text1}

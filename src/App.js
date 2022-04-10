@@ -14,6 +14,7 @@ import Posluszenstwo from "./components/Treningi/Posluszenstwo";
 import Obedience_1 from "./components/Treningi/Obedience_1";
 import SportowySzczeniak from "./components/Treningi/SportowySzczeniak";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Wspolne from "./components/Treningi/Wspolne";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ function App() {
     { title: "Posłuszeństwo z el. obedience", slug: "treningi/posluszenstwo-el-obd" },
     { title: "Obedience 1", slug: "treningi/obedience-1" },
     { title: "Sportowy szczeniak", slug: "treningi/sportowy-szczeniak" },
-    { title: "Treningi wspólne", slug: "treningi-wspolne" },
+    { title: "Treningi wspólne", slug: "treningi/treningi-wspolne" },
   ];
   
   const itemTitles = [
@@ -57,6 +58,7 @@ function App() {
               <Route path="/treningi/posluszenstwo-el-obd" element={<Posluszenstwo />} />
               <Route path="/treningi/obedience-1" element={<Obedience_1 />} />
               <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
+              <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
             </Routes>
           </div>
         </Router>

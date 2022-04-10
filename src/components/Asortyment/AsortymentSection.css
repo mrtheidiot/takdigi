@@ -35,6 +35,11 @@
   height: 27%;
 }
 
+.asortymentsection-4 a {
+  text-decoration: none;
+  color: black;
+}
+
 .asortymentsection-6 {
   text-align: center;
   font-family: "Indie Flower", cursive;

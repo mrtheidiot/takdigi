@@ -3,16 +3,20 @@ import { useState } from "react";
 import "./ImageItem.css";
 import ImageOverlay from "./ImageOverlay";
 
-const ImageItem = ({ img }) => {
-  const [showImage, setShowImage] = useState(null);
+const ImageItem = ({ img, alt }) => {
+  const [showImage, setShowImage] = useState(false);
 
-    const imageOverlayHandler = () => {
-        setShowImage(true);
-    }
+  const imageOverlayHandler = () => {
+      setShowImage(true);
+  }
+  
+  const hideOverlayHandler = () => {
+    setShowImage(false);
+  }
 
   return (
     <>
-      {showImage && <ImageOverlay img={img} alt='cokolwiek' />}
+      {showImage && <ImageOverlay img={img} alt={alt} hideOverlayHandler={hideOverlayHandler} />}
       <div className="imageItem__image">
         <img src={img} alt="cokolwiek" onClick={imageOverlayHandler}/>
       </div>
