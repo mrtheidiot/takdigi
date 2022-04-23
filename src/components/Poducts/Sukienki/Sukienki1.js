@@ -1,41 +1,43 @@
-import React from 'react'
-import classes from '.Sukienki1.module.css';
-import Sukienki2 from './Sukienki2';
+import React from "react";
+import classes from "./Sukienki1.module.css";
+import zdj1 from "./../../../assets/p1.jpg";
 
 const Sukienki1 = () => {
-  const items = [
+  const itemlist = [
     {
-      title: "Szarpaki",
-      description:
-        '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."',
-      zdj: `${szarpaki}`,
+      nazwa: "Spodniczka standardowa",
+      link: "/kontakt",
+      description: ["taka i taka spodniczka", "taka i taka"],
+      img: `${zdj1}`,
     },
     {
-      title: "Spódniczki/pasy treningowe",
-      description:
-        '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."',
-      zdj: `${spodniczka}`,
+      nazwa: "Spodniczka standardowa",
+      link: "/kontakt",
+      description: ["taka i taka spodniczka", "taka i taka"],
+      img: `${zdj1}`,
     },
   ];
 
+  const directionClass = reverse === 1 ? `${classes.normal}` : `${classes.reverse}`;
+
   return (
     <>
-      <Banner id={2} />
-      <>
-        <div className="main-wrapper-asortyment">
-          {items.map((trening, index) => (
-            <AsortymentSection
-              title={trening.title}
-              description={trening.description}
-              image={trening.zdj}
-              ifReverse={index % 2 === 0 ? 0 : 1}
-              key={index}
-            />
+      <div className={classes.wrapper}>
+          {itemlist.map((item) => (
+              <div className={`${classes.section} ${directionClass}` }>
+                  <div className={classes.image}>
+                        test
+                  </div>
+                  <div >
+
+                  </div>
+
+              </div>
           ))}
-        </div>
-      </>
+
+      </div>
     </>
   );
-}
+};
 
-export default Sukienki1
+export default Sukienki1;
