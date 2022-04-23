@@ -1,5 +1,5 @@
 import "./AsortymentSection.css";
-import { Link } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 const AsortymentSection = (props) => {
   const styles2 =
@@ -13,7 +13,7 @@ const AsortymentSection = (props) => {
         </div>
         <div className="asortymentsection-3">
           <Link to={props.link}>
-          <div className="asortymentsection-4">{props.title}</div>
+            <div className="asortymentsection-4">{props.title}</div>
           </Link>
           <div className="asortymentsection-5">
             <div className="asortymentsection-6">{props.description}</div>

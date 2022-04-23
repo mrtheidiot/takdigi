@@ -19,7 +19,7 @@ const Asortyment = () => {
       description:
         '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."',
       zdj: `${spodniczka}`,
-      link: "/asortyment/sukienki"
+      link: "/asortyment/sukienki",
     },
   ];
 

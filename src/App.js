@@ -15,6 +15,7 @@ import Obedience_1 from "./components/Treningi/Obedience_1";
 import SportowySzczeniak from "./components/Treningi/SportowySzczeniak";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Wspolne from "./components/Treningi/Wspolne";
+import Sukienki1 from "./components/Poducts/Sukienki/Sukienki1";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,6 +60,8 @@ function App() {
               <Route path="/treningi/obedience-1" element={<Obedience_1 />} />
               <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
               <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
+              <Route path="/asortyment/sukienki/" element={<Sukienki1 />} />
+
             </Routes>
           </div>
         </Router>
