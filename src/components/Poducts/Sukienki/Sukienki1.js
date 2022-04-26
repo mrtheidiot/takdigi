@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Sukienki1.module.css";
 import zdj1 from "./../../../assets/p1.jpg";
 
@@ -18,23 +18,20 @@ const Sukienki1 = () => {
     },
   ];
 
-  const directionClass = reverse === 1 ? `${classes.normal}` : `${classes.reverse}`;
-
   return (
     <>
       <div className={classes.wrapper}>
-          {itemlist.map((item) => (
-              <div className={`${classes.section} ${directionClass}` }>
-                  <div className={classes.image}>
-                        test
-                  </div>
-                  <div >
+        {itemlist.map((item) => (
+          <div className={classes.section}>
+            <div className={classes.image}>
+              <img src={item.img}
 
-                  </div>
 
-              </div>
-          ))}
 
+
+          
+          </div>
+        ))}
       </div>
     </>
   );
