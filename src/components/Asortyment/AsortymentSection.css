@@ -28,12 +28,26 @@
   margin: 0 2%;
 }
 
+.asortymentsection-3 a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .asortymentsection-4 {
   font-size: 3rem;
   text-align: center;
   font-family: "Teko";
   height: 27%;
+  transition: ease-in-out 0.2s opacity;
+  transition: ease 0.1s transform;
 }
+
+.asortymentsection-4:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 
 .asortymentsection-4 a {
   text-decoration: none;
