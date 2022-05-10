@@ -1,0 +1,44 @@
+.wrapper {
+  width: 80%;
+  margin: 5vh auto 0 auto;
+}
+.image {
+  width: 40%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.textarea {
+  height: 85%;
+  margin: auto 0;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+
+}
+
+.opis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}

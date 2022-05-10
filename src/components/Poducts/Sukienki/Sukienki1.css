@@ -1,0 +1,17 @@
+.sukienki_left {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #F9F3DF;
+  border-radius: 20px;
+  height: 35vh;
+  margin-bottom: 1%;
+  font-family: Nasalization;
+}
+
+.sukienki_right {
+  font-family: Nasalization;
+  display: flex;
+  border-radius: 20px;
+  height: 35vh;
+  margin-bottom: 1%;
+}
