@@ -3,22 +3,22 @@ import { useReducer, useState } from "react";
 import ShopOverlay from "./ShopOverlay";
 
 const ShopGallery = (props) => {
-  const [current, setCurrent] = useState(0);
-  const [showOverlay, setShowOverlay] = useState(false);
-  const listLength = props.imageList.length;
-  console.log(listLength);
+  // const [current, setCurrent] = useState(0);
+  // const [showOverlay, setShowOverlay] = useState(false);
+  // const listLength = props.imageList.length;
+  // console.log(listLength);
 
-  const nextImage = () => {
-    {
-      current === listLength - 1 ? setCurrent(0) : setCurrent((prev)=>(prev+1));
-    }
-  };
+  // const nextImage = () => {
+  //   {
+  //     current === listLength - 1 ? setCurrent(0) : setCurrent((prev)=>(prev+1));
+  //   }
+  // };
   
-  const prevImage = () => {
-    {
-      current === 0 ? setCurrent(listLength - 1) : setCurrent(prev => prev-1);
-    }
-  };
+  // const prevImage = () => {
+  //   {
+  //     current === 0 ? setCurrent(listLength - 1) : setCurrent(prev => prev-1);
+  //   }
+  // };
 
   // document.addEventListener('keydown', function(event){
   //   if(event.key === "ArrowLeft"){
@@ -35,35 +35,34 @@ const ShopGallery = (props) => {
   // });
 
 
-  const hadnleShopOverlay = () => {
-    setShowOverlay((prev) => !prev); //to samo co w next i previous
-    console.log(showOverlay)
-  };
+  // const hadnleShopOverlay = () => {
+  //   setShowOverlay((prev) => !prev); //to samo co w next i previous
+  //   console.log(showOverlay)
+  // };
 
-  document.addEventListener('keydown', function(event){
-    if(event.key === "Escape"){
-      setShowOverlay(false);
-    }
-  });
+  // document.addEventListener('keydown', function(event){
+  //   if(event.key === "Escape"){
+  //     setShowOverlay(false);
+  //   }
+  // });
 
   return (
     <>
-      {showOverlay && (
+      {props.showOverlay && (
         <ShopOverlay
-          hadnleShopOverlay={hadnleShopOverlay}
-          nextImage={nextImage}
-          prevImage={prevImage}
-          current={current}
-          listLength={listLength}
+          hadnleShopOverlay={props.hadnleShopOverlay}
+          nextImage={props.nextImage}
+          prevImage={props.prevImage}
+          current={props.current}
+          listLength={props.listLength}
           imageList={props.imageList}
         />
       )}
-      <div onClick={hadnleShopOverlay} className={classes.wrapper}>
+      <div onClick={props.hadnleShopOverlay} className={classes.wrapper}>
         <div className={classes.gallery}>
-          <img src={props.imageList[current].image} />
+          <img src={props.imageList[props.current].image} />
         </div>
         <div className={classes.buttonsarea}>
-            
         </div>
       </div>
     </>
