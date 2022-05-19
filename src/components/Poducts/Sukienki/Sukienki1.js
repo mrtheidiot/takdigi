@@ -8,7 +8,7 @@ const Sukienki1 = () => {
   const itemlist = [
     {
       nazwa: "Spódniczki standardowe",
-      link: "/kontakt",
+      link: "/asortyment/sukienki/shopitem",
       description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
       description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
       img: `${zdj1}`,
@@ -17,7 +17,7 @@ const Sukienki1 = () => {
     },
     {
       nazwa: "Spódniczki dla wysokich psów",
-      link: "/kontakt",
+      link: "/asortyment/sukienki/shopitem",
       description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
       description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
       img: `${zdj1}`,
