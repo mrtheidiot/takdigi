@@ -1,0 +1,23 @@
+.wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+
+}
+
+.mainarea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery {
+    width: 47%;
+    border-radius: 15px;
+}
+
+.description {
+    width: 47%;
+   border-radius: 15px;
+}

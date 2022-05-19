@@ -14,6 +14,12 @@ const ImageItem = ({ img, alt }) => {
     setShowImage(false);
   }
 
+  document.addEventListener('keydown', function(event){
+    if(event.key === "Escape"){
+      setShowImage(false);
+    }
+  });
+
   return (
     <>
       {showImage && <ImageOverlay img={img} alt={alt} hideOverlayHandler={hideOverlayHandler} />}
