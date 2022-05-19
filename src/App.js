@@ -16,6 +16,7 @@ import SportowySzczeniak from "./components/Treningi/SportowySzczeniak";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Wspolne from "./components/Treningi/Wspolne";
 import Sukienki1 from "./components/Poducts/Sukienki/Sukienki1";
+import ShopItem from "./ShopItem/ShopItem";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ function App() {
     { title: "Sportowy szczeniak", slug: "treningi/sportowy-szczeniak" },
     { title: "Treningi wspólne", slug: "treningi/treningi-wspolne" },
   ];
-  
+
   const itemTitles = [
     { title: "Szarpaki", slug: "szarpaki" },
     {
@@ -61,7 +62,7 @@ function App() {
               <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
               <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
               <Route path="/asortyment/sukienki/" element={<Sukienki1 />} />
-
+              <Route path="/asortyment/sukienki/shopitem" element={<ShopItem />} />
             </Routes>
           </div>
         </Router>

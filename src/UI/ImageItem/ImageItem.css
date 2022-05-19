@@ -10,9 +10,9 @@
     height: 100%;
     width: 90%;
     border-radius: 10px;
-    transition: ease-in-out 0.2s all;
+    transition: ease-in-out 0.3s all;
 }
 
 .imageItem__image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }

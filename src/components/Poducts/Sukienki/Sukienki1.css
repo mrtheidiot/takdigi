@@ -1,17 +1,37 @@
 .sukienki_left {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   background-color: #F9F3DF;
   border-radius: 20px;
   height: 35vh;
   margin-bottom: 1%;
-  font-family: Nasalization;
+  border: solid 1px transparent;
+  transition: border 0.3s ease-in;
 }
 
 .sukienki_right {
-  font-family: Nasalization;
   display: flex;
   border-radius: 20px;
   height: 35vh;
   margin-bottom: 1%;
+  border: solid 1px transparent;
+  transition: border 0.3s ease-in;
+
+}
+
+.sukienki_right:hover {
+  border: solid 1px brown;
+}
+
+.sukienki_left:hover {
+  border: solid 1px brown;
+}
+
+@keyframes borderappear {
+  from {
+    border: solid 2px white;
+  }
+  to {
+    bodrder: solid 2px black;
+  }
 }
