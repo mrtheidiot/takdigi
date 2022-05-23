@@ -26,24 +26,25 @@
 }
 
 .textarea {
-  padding: 2%;
-  height: 85%;
+  padding: 1%;
+  height: 90%;
   margin: auto 0;
   width: 60%;
   /* text-align: center; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Teko";
   justify-content: center;
+
   /* align-items: center; */
   height: 20%;
-  transition: ease 0.1s transform;
+  transition: ease 0.2s transform;
 }
 
 .title:hover {
