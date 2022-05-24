@@ -17,6 +17,8 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Wspolne from "./components/Treningi/Wspolne";
 import Sukienki1 from "./components/Poducts/Sukienki/Sukienki1";
 import ShopItem from "./ShopItem/ShopItem";
+import SukienkiBezWzoru from "./ShopItem/SukienkiBezWzoru";
+import SukienkZeWzorem from "./ShopItem/SukienkiZeWzorem";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,6 +65,9 @@ function App() {
               <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
               <Route path="/asortyment/sukienki/" element={<Sukienki1 />} />
               <Route path="/asortyment/sukienki/shopitem" element={<ShopItem />} />
+              <Route path="/asortyment/sukienki/standard/sukienkizewzorem" element={<SukienkZeWzorem />} />
+              <Route path="/asortyment/sukienki/standard/sukienkibezwzoru" element={<SukienkZeWzorem />} />
+              /asortyment/sukienki/standard/sukienkizewzorem
             </Routes>
           </div>
         </Router>

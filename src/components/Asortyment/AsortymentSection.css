@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   padding: 1.5% 0;
-  justify-content: center;
+  justify-content: space-around;
   border-radius: 20px;
 }
 
@@ -12,7 +12,7 @@
 
 .asortymentsection-2 {
   height: 30vh;
-  width: 40%;
+  width: 47%;
   margin: 0 2%;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .asortymentsection-3 {
-  width: 40%;
+  width: 47%;
   margin: 0 2%;
 }
 
@@ -85,10 +85,10 @@
 
 @media (min-width: 992px) and (max-width: 1700px) {
   .asortymentsection-2 {
-    width: 40%;
+    width: 49%;
   }
   .asortymentsection-3 {
-    width: 40%;
+    width: 49%;
   }
 }
 

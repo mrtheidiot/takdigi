@@ -42,7 +42,7 @@ const AboutMe = () => {
       <Banner id={6} />
       <div className={classes.wrapper}>
         <div className={classes.naglowek}>
-          <div className={classes.nag1}>O mnie</div>
+          <div className={classes.nag1}>JA:</div>
           {/* <div className={classes.nag2}>Ja:</div> */}
           <div className={classes.nag3}>Nazywam sie Dorota Alewras</div>
         </div>
