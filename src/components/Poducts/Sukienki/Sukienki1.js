@@ -7,8 +7,8 @@ import './Sukienki1.css';
 const Sukienki1 = () => {
   const itemlist = [
     {
-      nazwa: "Spódniczki standardowe",
-      link: "/asortyment/sukienki/shopitem",
+      nazwa: "Spódniczki standardowe - Bez wzoru",
+      link: "/asortyment/sukienki/standard/sukienkibezwzoru",
       description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
       description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
       img: `${zdj1}`,
@@ -16,7 +16,24 @@ const Sukienki1 = () => {
 
     },
     {
-      nazwa: "Spódniczki dla wysokich psów",
+      nazwa: "Spódniczki standardowe - Ze wzorem",
+      link: "/asortyment/sukienki/standard/sukienkizewzorem",
+      description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
+      description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
+      img: `${zdj1}`,
+      direction: 1,
+
+    },
+    {
+      nazwa: "Spódniczki dla wysokich psów - Bez wzoru",
+      link: "/asortyment/sukienki/shopitem",
+      description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
+      description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
+      img: `${zdj1}`,
+      direction: 0,
+    },
+    {
+      nazwa: "Spódniczki dla wysokich psów - Ze wzorem",
       link: "/asortyment/sukienki/shopitem",
       description1: ["Gładka, rozkloszowania spódniczka taneczna. Model z szerokim pasem okalającym biodra oraz falbaną z pełnego koła."],
       description2: ["W pasie spódnicę utrzymuje gumka. Materiał jest lejący, dzięki czemu spódnica ładnie się układa."],
@@ -28,6 +45,9 @@ const Sukienki1 = () => {
 
   return (
     <>
+    <div>
+      
+    </div>
       <div className={classes.wrapper}>
         {itemlist.map((item) => (
           <Link to={item.link}>

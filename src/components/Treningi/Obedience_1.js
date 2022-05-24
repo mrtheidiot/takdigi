@@ -15,7 +15,6 @@ const Obedience_1 = () => {
     "Częstotliwość spotkań: 1x/tydzień.",
     "Liczba spotkań: 8.",
     "Program obejmuje zapoznanie się z ćwiczeniami z kl. 0 oraz elementami kl. 1.",
-
   ];
   return (
     <Wrapper>
@@ -31,11 +30,10 @@ const Obedience_1 = () => {
         <a href="https://www.google.pl">Kalendarz szkoleń</a> lub{" "}
         <a href="https://www.facebook.com">fb szkoły</a>.
       </div>
-    <div className="trening_textarea">Organizator: Szkoła na 6 Łap</div>
+      <div className="trening_textarea">Organizator: Szkoła na 6 Łap</div>
       <div className="trening_textarea">Koszt: 8 spotkań - ?zł</div>
       <br></br>
       <div className="trening_textarea">WIĘCEJ INFORMACJI WKRÓTCE</div>
-
     </Wrapper>
   );
 };
