@@ -1,8 +1,7 @@
 import React from "react";
 import "./Treningi.css";
 import dogo1 from "./../../assets/dogo1.jpg";
-import dogo2 from "./../../assets/p1.jpg";
-import Galeria from "./Galeria";
+import ImageItem from "./../../UI/ImageItem/ImageItem";
 
 import { Wrapper } from "./Wrapper";
 
@@ -40,9 +39,14 @@ const Indywidualny = () => {
         <div className="trening_textarea">Pakiet 6 treningów: 380 zł</div>
       </div>
       <div className="galeria_position">
-
-      <Galeria dogo1={dogo1} dogo2={dogo2} />
-      <Galeria dogo1={dogo2} dogo2={dogo1} />
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+      </div>
+      <div className="galeria_position">
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
       </div>
     </Wrapper>
   );

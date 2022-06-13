@@ -11,6 +11,12 @@ const MainPageSection2 = () => {
       internal: 1,
       link: "/treningi",
     },
+    {
+      preLink: 2,
+      category: "Facebook",
+      internal: 0,
+      link: "https://facebook.com/obitraining",
+    },
   ];
   const text2 =
     "Prowadzę treningi indywidualne oraz grupowe teamów na różnym poziomie zaawansowania – tym zajmuję się w ramach mojej szkoły, która nazywa się Tak to się Obi.";
@@ -18,7 +24,7 @@ const MainPageSection2 = () => {
   return (
     <div className="mainpagesection__main">
       <div className="mainpagesection__text">
-        <div>Nazywam się Dorota Alewras (więcej o mnie i o moich psach <Link to="/omnie">tutaj</Link>). Jestem przede wszystkim trenerem Obedience, czyli sportowego posłuszeństwa. Skoro tu trafiłeś, pewnie wiesz mniej więcej co to za sport, więc nie będę się tu wdawać w szczegóły. Jesteś swój.</div>
+        <div>Nazywam się Dorota Alewras (więcej o mnie i o moich psach <Link to="/omnie" style={{textDecoration: "underline"}}>tutaj</Link>). Jestem przede wszystkim trenerem Obedience, czyli sportowego posłuszeństwa. Skoro tu trafiłeś, pewnie wiesz mniej więcej co to za sport, więc nie będę się tu wdawać w szczegóły.</div>
         <div>{text2}</div>
       </div>
       <div className="mainpagesection__links">

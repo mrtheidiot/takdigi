@@ -23,32 +23,65 @@
     height: 60vh;
     width: 49%;
     border-radius: 15px;
-   background-color: #F9F3DF;
+    background-color: #edcfa9;
 }
 
 .description2 {
-    width: 97%;
-    height: 97%;
-    margin: 3% 0 0 3%;
-    
+    padding: 2% 0;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-family: 'Nasalization';
 }
+
+.title_of_the_item {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.description_container {
+    width: 90%;
+    margin: 0 auto;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description_area {
+
+}
+
+.current_info {
+    height: 40%;
+    border-radius: 10px;
+    background-color: #f9faef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .galleryList {
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 5vh;
 
 }
 
 .galleryListImage {
-    width: 10vw;
-    height: 13vh;
-    margin-right: 3%;
+    width: 15%;
+    height: 15vh;
+    /* margin-right: 3%; */
     border-radius: 10px;
     margin-top: 3vh;
-
+    overflow: hidden;
 }
 
 .galleryListImage img {
@@ -56,4 +89,10 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: ease-in 0.2s transform;
+}
+
+.galleryListImage img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
 }

@@ -18,7 +18,7 @@ export const MainPage = () => {
         { preLink: 1, category: "PiesPotrafi.pl", internal: 0, link: "https://www.piespotrafi.pl" },
       ],
       text1:
-        "Niektóre kursy i wydarzenia prowadzę z ramienia szkoły, z którą współpracuję od 2018 roku – Szkoła na 6 Łap Piespotrafi.pl w Szczecinie. Tam zobaczycie mnie jak prowadzę zajęcia grupowe z posłuszeństwa na co dzień, przedszkola dla papisiów oraz konsultacje i treningi indywidualne w przypadku problemów na linii właściciel-pies.",
+        "Niektóre kursy i wydarzenia prowadzę z ramienia szkoły, z którą współpracuję od 2018 roku – Szkoła na 6 Łap Piespotrafi.pl w Szczecinie. Tam zobaczycie mnie jak prowadzę zajęcia grupowe z posłuszeństwa na co dzień, przedszkola dla papisiów oraz konsultacje i treningi indywidualne w przypadku problemów behawioralnych psa.",
     },
     {
       buttons: [
@@ -54,7 +54,7 @@ export const MainPage = () => {
         },
       ],
       text1:
-        "Jeśli coś budzi Twoje wątpliwości lub nie wiesz na jaki rodzaj kursu powinieneś się wybrać – napisz do mnie lub zadzwoń. Ale lepiej napisz, sms albo wiadomość na fb; tylko się nie denerwuj, jeśli chwilę poczekasz - jak mam dużo pracy to odpisuję z opóźnieniem.",
+        "Jeśli coś budzi Twoje wątpliwości lub nie wiesz na jaki rodzaj kursu powinieneś się wybrać – napisz do mnie sms albo wiadomość na fb.",
     },
   ];
 

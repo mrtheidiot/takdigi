@@ -6,13 +6,13 @@ const Kontakt = () => {
       <div className={classes.seg1}>
         <div>Dane firmy:</div>
         <div>
-          Animalewra Dorota Alewras
+          Animalevra Dorota Alewras
           <br></br>
           ul. Monte Cassino 36/7
-          <br></br>∑ 70-465 Szczecin
+          <br></br> 70-465 Szczecin
         </div>
         <div>Dane do przelewu:</div>
-        <div>Animalewra Dorota Alewras</div>
+        <div>Animalevra Dorota Alewras</div>
         <div>
           ING BANK Śląski:
           <br></br>
@@ -68,7 +68,7 @@ const Kontakt = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-            <i class="fab fa-2x fa-facebook"></i></a> AnimalewraHusse
+            <i class="fab fa-2x fa-facebook"></i></a> AnimalevraHusse
            
           </div>
           <div className={classes.socialmedia}>

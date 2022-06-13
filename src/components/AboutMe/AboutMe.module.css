@@ -21,7 +21,7 @@
 
   .content_text {
     width: 65%;
-    font-family: 'Alegreya', serif;
+    font-family: 'Nasalization'
   }
 
   .content_picture {
@@ -43,6 +43,7 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    font-family: 'Nasalization'
   }
 
   .nag1 {
@@ -92,4 +93,8 @@
 .hr1 {
   width: 80%;
   margin: 30px auto 50px auto;
+}
+
+.osiagniecia {
+  text-decoration: underline;
 }

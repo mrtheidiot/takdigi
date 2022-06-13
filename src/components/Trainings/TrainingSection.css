@@ -5,35 +5,38 @@
   /* font-weight: bold; */
 }
 .section-wrapper-1 {
-  width: 100%;
+  height: calc(25vh + 15vw);
+  font-family: Nasalization;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
-  min-height: 40vh;
-  font-family: Nasalization;
 }
 
 .section-wrapper-2 {
-  width: 100%;
-  background-color: #edcfa9;
-  text-align: center;
+  height: calc(25vh + 15vw);
+  font-family: Nasalization;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
-  min-height: 40vh;
-  font-family: Nasalization;
+  background-color: #edcfa9;
 }
 
 .section-main-position {
+  height: 90%;
   width: 70%;
-  text-align: center;
+  margin: auto 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  
 }
 
 .reverse-row {
+  height: 90%;
   width: 70%;
+  margin: auto 0;
   display: flex;
-  justify-content: space-between;
   flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .reverse-row .desctiption-linksprices {
@@ -41,27 +44,23 @@
 }
 
 .section-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 49%;
+  height: 100%;
+  width: 45%;
 }
 
 .section-image img {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .description-wrapper {
-  height: 95%;
-  margin: auto 0;
+  height: 100%;
+  width: 45%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
-  width: 49%;
+  justify-content: space-between;
 }
 
 .description-wrapper a {
@@ -74,7 +73,7 @@
   transition: ease-in-out 0.2s opacity;
   transition: ease 0.1s transform;
   overflow: hidden;
-  font-size: 2.5rem;
+  font-size: 3rem;
   min-height: 20%;
   
 }
@@ -84,19 +83,19 @@
   transform: scale(1.1);
 }
 .description-1 {
+  font-size: 1.2rem;
 
 }
 
 .desctiption-linksprices {  
-  width: 100%;
-  padding: 2%;
   border-radius: 10px;
   background-color: #edcfa9;
+  height: 30%;
+  font-size: 1.4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  
+  align-items: center;
 }
 
 
@@ -114,6 +113,18 @@
 
   }
   .description-wrapper {
+  }
+
+  .description-title {
+    font-size: 2rem;
+  }
+
+  .desctiption-linksprices {  
+    font-size: 1rem;
+  }
+  .description-1 {
+    font-size: 1rem;
+  
   }
 
 }

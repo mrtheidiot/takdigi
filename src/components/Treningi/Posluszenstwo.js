@@ -5,6 +5,7 @@ import { Wrapper } from "./Wrapper";
 import dogo1 from "./../../assets/dogo1.jpg";
 import dogo2 from "./../../assets/p1.jpg";
 import Galeria from "./Galeria";
+import ImageItem from "./../../UI/ImageItem/ImageItem";
 
 const Posluszenstwo = () => {
   var link = `${(<a href="www.google.pl">Kalendarz</a>)}`;
@@ -115,7 +116,16 @@ const Posluszenstwo = () => {
       </div>
       <div className="trening_textarea">Organizator: Szkoła na 6 Łap</div>
       <div className="trening_textarea">Koszt: 8 spotkań - 550zł</div>
-      <Galeria dogo1={dogo1} dogo2={dogo2} />
+      <div className="galeria_position">
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+      </div>
+      <div className="galeria_position">
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+        <ImageItem img={dogo1} alt="alt" />
+      </div>
     </Wrapper>
   );
 };

@@ -44,7 +44,7 @@ const AboutMe = () => {
         <div className={classes.naglowek}>
           <div className={classes.nag1}>JA:</div>
           {/* <div className={classes.nag2}>Ja:</div> */}
-          <div className={classes.nag3}>Nazywam sie Dorota Alewras</div>
+          <div className={classes.nag3}>Nazywam sie Dorota Alewras.</div>
         </div>
         <br></br>
         <div className={classes.content_wrapper}>
@@ -172,6 +172,19 @@ const AboutMe = () => {
               Życiowo jest wspaniałym towarzyszem, bardzo delikatna z natury -
               prawdziwa dama. Zobaczymy, dokąd nas poniesie ta wspólna droga :)
             </div>
+            <br></br>
+            {/* - "obiecujący" start w zawodach treningowych podczas III Otwartych Mistrzostw Polski BC i OA w Szczecinie (09.2021) */}
+            <div className={classes.text2}>
+                <div className={classes.osiagniecia}> 
+                Osiągnięcia:
+                </div>
+                <br></br>
+                 - "obiecujący" start w zawodach treningowych podczas III Otwartych Mistrzostw Polski BC i OA w Szczecinie (09.2021)
+                 <br></br>
+                 <br></br>
+                 - start w zawodach Rally-o w klasie Standard; pierwsza z trzech wymaganych "łapek" do wyższej klasy
+            </div>
+
             <br></br>
           </div>
           <div className={classes.content_picture}>

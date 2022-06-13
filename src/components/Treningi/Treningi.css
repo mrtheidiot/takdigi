@@ -14,3 +14,9 @@ h1 {
 .opis_kursu {
     text-align: left;
 }
+
+.galeria_position {
+    display: flex;
+    margin-bottom: 3vh;
+
+}

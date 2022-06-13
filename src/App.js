@@ -19,6 +19,9 @@ import Sukienki1 from "./components/Poducts/Sukienki/Sukienki1";
 import ShopItem from "./ShopItem/ShopItem";
 import SukienkiBezWzoru from "./ShopItem/SukienkiBezWzoru";
 import SukienkZeWzorem from "./ShopItem/SukienkiZeWzorem";
+import Szarpaki from "./components/Asortyment/Products/Szarpaki";
+import SpodniczkiStandardowe from "./components/Asortyment/Products/SpodniczkiStandardowe";
+import SpodniczkiDlaWysokichPsow from "./components/Asortyment/Products/SpodniczkiDlaWysokichPsow";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,10 +36,14 @@ function App() {
   ];
 
   const itemTitles = [
-    { title: "Szarpaki", slug: "szarpaki" },
+    { title: "Szarpaki", slug: "/asortyment/szarpaki/" },
     {
-      title: "Spódniczki/pasy treningowe",
-      slug: "sukienki_oraz_pasy_treningowe",
+      title: "Spódniczki standardowe",
+      slug: "/asortyment/spodniczki_standardowe",
+    },
+    {
+      title: "Spódniczki dla wysokich psow",
+      slug: "/asortyment/spodniczki_dla_wysokich_psow",
     },
   ];
 
@@ -63,11 +70,14 @@ function App() {
               <Route path="/treningi/obedience-1" element={<Obedience_1 />} />
               <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
               <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
-              <Route path="/asortyment/sukienki/" element={<Sukienki1 />} />
-              <Route path="/asortyment/sukienki/shopitem" element={<ShopItem />} />
-              <Route path="/asortyment/sukienki/standard/sukienkizewzorem" element={<SukienkZeWzorem />} />
-              <Route path="/asortyment/sukienki/standard/sukienkibezwzoru" element={<SukienkZeWzorem />} />
-              /asortyment/sukienki/standard/sukienkizewzorem
+              {/* <Route path="/asortyment/sukienki/" element={<Sukienki1 />} /> */}
+              {/* <Route path="/asortyment/sukienki/shopitem" element={<ShopItem />} /> */}
+              {/* <Route path="/asortyment/sukienki/standard/sukienkizewzorem" element={<SukienkZeWzorem />} /> */}
+              {/* <Route path="/asortyment/sukienki/standard/sukienkibezwzoru" element={<SukienkZeWzorem />} /> */}
+              {/* /asortyment/sukienki/standard/sukienkizewzorem */}
+              <Route path="/asortyment/szarpaki/" element={<Szarpaki />} />
+              <Route path="/asortyment/spodniczki_standardowe" element={<SpodniczkiStandardowe />} />
+              <Route path="/asortyment/spodniczki_dla_wysokich_psow" element={<SpodniczkiDlaWysokichPsow />} />
             </Routes>
           </div>
         </Router>

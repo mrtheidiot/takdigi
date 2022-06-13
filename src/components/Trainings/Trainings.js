@@ -1,6 +1,7 @@
 import TrainingSection from "./TrainingSection";
 import piesek from "./../../assets/p2.jpg";
 import Banner from "../Banner/Banner";
+import './trainings.css';
 
 const Trainings = () => {
   const trainings = [
@@ -51,7 +52,7 @@ const Trainings = () => {
       title: "Treningi wspólne",
       link: "treningi-wspolne",
       description: [
-        "Zajęcia grupowe, podczas których „każdy sobie rzepkę skrobie” – Wy ćwiczycie ze swoimi psami, ja ze swoimi.", "Takie spotkania mają na celu trening w otoczeniu innych psów i ludzi oraz wykorzystanie ich do tzw. overów.", "Miejsce spotkań jest takie, na jakie się umówimy.", "W zimie wynajmujemy halę.", "Częstotliwość spotkań – jaka komu pasuje :)",
+        "Zajęcia grupowe, podczas których „każdy sobie rzepkę skrobie” – Wy ćwiczycie ze swoimi psami, ja ze swoimi.", "Miejsce spotkań jest takie, na jakie się umówimy.", "W zimie wynajmujemy halę.", "Częstotliwość spotkań – jaka komu pasuje :)",
       ],
       image: `${piesek}`,
       organizator: "Tak to się Obi",
