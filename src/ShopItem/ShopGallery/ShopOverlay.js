@@ -25,7 +25,7 @@ const ShopOverlay = (props) => {
             </div>
             <div type='button' onClick={()=>{props.prevImage()}} className={classes.button}><i class="fas fa-5x fa-chevron-right"></i></div>
         </div>
-        <button type='button' onClick={()=>{props.hadnleShopOverlay()}}>Close</button>
+        {/* <button type='button' onClick={()=>{props.hadnleShopOverlay()}}>Close</button> */}
         </>
     )
 } 

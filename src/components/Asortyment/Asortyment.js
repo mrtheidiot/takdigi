@@ -2,8 +2,8 @@ import Banner from "../Banner/Banner";
 import { Link } from "react-router-dom";
 import classes from "./Asortyment.module.css";
 import szarpaki from "./../../assets/szarpaki.jpg";
-import spodnicka1 from "./../../assets/spodniczka1.jpg";
-import spodniczka2 from "./../../assets/spdnczka3.jpg";
+import spodnicka1 from "./../../assets/SpodniczkiStandardowe/8.jpg";
+import spodniczka2 from "./../../assets/SpodniczkiDlaWysokichPsow/4.jpg";
 
 import React from "react";
 
@@ -11,14 +11,14 @@ const Asortyment = () => {
   const products = [
     { title: "Szarpaki", image: `${szarpaki}`, link: "/asortyment/szarpaki" },
     {
-      title: "Spódniczki dla wysokich psow",
+      title: "Spódniczki standardowe",
       image: `${spodnicka1}`,
-      link: "/asortyment/spodniczki_dla_wysokich_psow",
+      link: "/asortyment/spodniczki_standardowe",
     },
     {
-      title: "Spódniczki standardowe",
+      title: "Spódniczki dla wysokich psow",
       image: `${spodniczka2}`,
-      link: "/asortyment/spodniczki_standardowe",
+      link: "/asortyment/spodniczki_dla_wysokich_psow",
     },
   ];
 

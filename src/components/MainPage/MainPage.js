@@ -63,7 +63,9 @@ export const MainPage = () => {
       <Banner id={5} />
       <div className="mainpage__main">
         <div className="mainpage__heading">
-          Witaj w Tak to się Obi! Przedstawię Ci stronę, żebyś wiedział o co tu
+          Witaj w Tak to się Obi! 
+          <br></br>
+          Przedstawię Ci stronę, żebyś wiedział o co tu
           w ogóle chodzi:
         </div>
         <MainPageSection2 />

@@ -26,3 +26,10 @@
 .mainpagesection__text div {
   margin-top: 1%;
 }
+
+@media (max-width: 992px) {
+
+  .mainpagesection__main {
+    width: 100%;
+  }
+}

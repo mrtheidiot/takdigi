@@ -8,11 +8,15 @@
     padding: 1%;
     background-color: #F9F3DF;
     padding-bottom: 2%;
+    font-family: "Teko";
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .seg1 {
     width: 30%; 
-    height: 30vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,6 +28,7 @@
 }
 
 .seg2 {
+    height: 45vh;
     width: 30%;
     border-left: solid 1px black;
     padding-left: 20px;
@@ -45,6 +50,8 @@
 }
 
 .seg3 {
+    height: 45vh;
+
     width: 30%;
     border-left: solid 1px black;
     padding-left: 20px;
@@ -55,7 +62,7 @@
 }
 
 .socialwrapper {
-    margin: 5% 0;
+    margin: 3% 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,4 +86,66 @@ a {
 
 .socialmedia i {
     margin-right: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        flex-direction: column;
+        font-size: 1.7rem;
+        height: auto;
+        margin-top: 5vh;
+        width: 90%;
+    }
+
+    .seg1 {
+        width: 95%;
+        height: auto;
+        
+    }
+    .seg2 {
+        border-top: solid 1px black;
+        border-left: none;
+        width: 95%;
+        height: auto;
+        padding-left: 0;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .seg2 div {
+        margin: 2% 0;
+        
+    }
+    .seg3 {
+        border-top: solid 1px black;
+        border-left: none;
+        width: 95%;
+        height: auto;
+        padding-left: 0;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .messenger {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialmedia {
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0;
+    }
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+
 }

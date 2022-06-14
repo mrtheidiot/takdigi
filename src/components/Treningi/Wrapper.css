@@ -12,3 +12,19 @@
     text-align: center;
 
 }
+
+@media(max-width: 992px) {
+  .treningi__wrapper {
+    width: 90%;
+    
+  
+  }
+
+  .treningi__wrapper h1 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .treningi__wrapper div {
+    margin-top: 7%;
+  }
+}

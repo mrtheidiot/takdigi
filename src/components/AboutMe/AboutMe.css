@@ -59,3 +59,9 @@
 .text2 {
     font-size: 3rem;
 }
+
+@media (max-width: 992px) {
+    .aboutme__textarea {
+        width: 90%;
+    }
+}

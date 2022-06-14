@@ -1,16 +1,16 @@
 import React from 'react'
 import ShopItem from '../../../ShopItem/ShopItem'
-import dogo1 from './../../../assets/p1.jpg';
-import dogo2 from './../../../assets/p2.jpg';
+import s1 from './../../../assets/SpodniczkiStandardowe/8.jpg'
+import s2 from './../../../assets/SpodniczkiStandardowe/6.jpg'
+import s3 from './../../../assets/SpodniczkiStandardowe/7.jpg'
+import s4 from './../../../assets/SpodniczkiStandardowe/9.jpg'
 
 const SpodniczkiStandardowe = () => {
   const imagesList = [
-    {image: `${dogo1}`, alt: "alt"},
-    {image: `${dogo1}`, alt: "alt"},
-    {image: `${dogo2}`, alt: "alt"},
-    {image: `${dogo1}`, alt: "alt"},
-    {image: `${dogo1}`, alt: "alt"},
-    {image: `${dogo2}`, alt: "alt"},
+    {image: `${s1}`, alt: "alt"},
+    {image: `${s2}`, alt: "alt"},
+    {image: `${s3}`, alt: "alt"},
+    {image: `${s4}`, alt: "alt"},
     
   ]
 
@@ -19,8 +19,6 @@ const SpodniczkiStandardowe = () => {
     {descs: ["Spodniczka bez wzoru, czarna, po 30zł", "Ideanla na lato", "Cena: 80zł"]},
     {descs: ["Spodniczka bez wzoru, czarna, po 40zł", "Ideanla na lato", "Cena: 70zł"]},
     {descs: ["Spodniczka bez wzoru, czarna, po 40zł", "Ideanla na lato", "Cena: 70zł"]},
-    {descs: ["Spodniczka bez wzoru, czarna, po 40zł", "Ideanla na lato", "Cena: 70zł"]},
-    {descs: ["Spodniczka bez wzoru, czarna, po 40zł", "Ideanla na lato", "Cena: 70zł"]}
   ]
 
   // to jest aktualnie nie uzywane
