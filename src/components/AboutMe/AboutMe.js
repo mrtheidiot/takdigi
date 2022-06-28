@@ -26,20 +26,25 @@ import r7 from "./../../assets/rivia/r7.jpg";
 import r8 from "./../../assets/rivia/r8.png";
 import r9 from "./../../assets/rivia/r9.png";
 import r10 from "./../../assets/rivia/r10.png";
+import riv2 from './../../assets/rivia/riv2.jpg';
+import riv3 from './../../assets/rivia/riv3.jpg';
+import riv1 from './../../assets/rivia/riv1.jpg';
 
 import j1 from "./../../assets/joker/j1.jpg";
 import j2 from "./../../assets/joker/j2.jpg";
-import j3 from "./../../assets/joker/j3.jpg";
+import j3 from "./../../assets/joker/jok2.jpg";
 import j4 from "./../../assets/joker/j4.jpg";
 import j5 from "./../../assets/joker/j5.jpg";
 import j6 from "./../../assets/joker/j6.jpg";
-import j7 from "./../../assets/joker/j7.jpg";
-import j8 from './../../assets/joker/j8.jpg';
+import j7 from "./../../assets/joker/jok1.jpg";
+import j8 from './../../assets/joker/jok3.jpg';
+import j9 from './../../assets/joker/j8.jpg';
+import j10 from './../../assets/joker/jok4.jpg';
 
 const AboutMe = () => {
   return (
     <>
-      <Banner id={6} />
+      <Banner id={2} />
       <div className={classes.wrapper}>
         <div className={classes.naglowek}>
           <div className={classes.nag1}>JA:</div>
@@ -195,17 +200,16 @@ const AboutMe = () => {
           <div className={classes.gallery}>
             <ImageItem img={r5} alt="alt" />
             <ImageItem img={r2} alt="alt" />
-            <ImageItem img={r3} alt="alt" />
-            <ImageItem img={r4} alt="alt" />
+            <ImageItem img={riv3} alt="alt" />
+            <ImageItem img={riv1} alt="alt" />
             <ImageItem img={r9} alt="alt" />
           </div>
           <div className={classes.gallery}>
             <ImageItem img={r1} alt="alt" />
-
             <ImageItem img={r6} alt="alt" />
             <ImageItem img={r7} alt="alt" />
             <ImageItem img={r8} alt="alt" />
-            <ImageItem img={r10} alt="alt" />
+            <ImageItem img={riv2} alt="alt" />
           </div>
         </div>
         <hr className={classes.hr1}></hr>
@@ -266,7 +270,7 @@ const AboutMe = () => {
               natychmiast jest gotowy do dalszej pracy. Zdecydowanie pies
               jednego właściciela. Na tę chwilę – odpukać!! – zdrowy jak rydz,
               stawy idealne, a przy tym pies jest proporcjonalny, silny,
-              umięśniony i piękny :) opinia rzecz jasna obiektywna!)
+              umięśniony i piękny :) opinia rzecz jasna obiektywna!
             </div>
             <br></br>
             <div className={classes.text}>
@@ -274,21 +278,21 @@ const AboutMe = () => {
             </div>
           </div>
           <div className={classes.content_picture}>
-            <img src={j8} />
+            <img src={j9} />
           </div>
         </div>
         <div className={classes.gallery__wrapper}>
           <div className={classes.gallery}>
+            <ImageItem img={j5} alt="alt" />
             <ImageItem img={j1} alt="alt" />
-            <ImageItem img={j2} alt="alt" />
-            <ImageItem img={j3} alt="alt" />
             <ImageItem img={j4} alt="alt" />
+            <ImageItem img={j6} alt="alt" />
           </div>
           <div className={classes.gallery}>
-            <ImageItem img={j5} alt="alt" />
-            <ImageItem img={j6} alt="alt" />
+            <ImageItem img={j8} alt="alt" />
+            <ImageItem img={j3} alt="alt" />
             <ImageItem img={j7} alt="alt" />
-            <ImageItem img={j7} alt="alt" />
+            <ImageItem img={j10} alt="alt" />
           </div>
         </div>
         <hr className={classes.hr1}></hr>

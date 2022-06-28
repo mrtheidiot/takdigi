@@ -9,12 +9,19 @@ import dog4 from "./../../assets/p4.jpg";
 import dog5 from "./../../assets/dogo4.png";
 import dog6 from './../../assets/rivia/r1.jpg';
 
+import banner1 from './../../assets/Bannery/banner1.png'
+import banner2 from './../../assets/Bannery/banner2.png'
+import banner3 from './../../assets/Bannery/banner3.png'
+import banner4 from './../../assets/Bannery/banner4.png'
+import banner5 from './../../assets/Bannery/banner5.png'
+
 const Banner = (props) => {
   const banners = [
-    { img: `${dog1}`, alt: "piesek", id: 1 },
-    { img: `${dog2}`, alt: "piesek", id: 2 },
-    { img: `${dog3}`, alt: "piesek", id: 3 },
-    { img: `${dog4}`, alt: "piesek", id: 4 },
+    { img: `${banner1}`, alt: "piesek", id: 1 },
+    { img: `${banner2}`, alt: "piesek", id: 2 },
+    { img: `${banner3}`, alt: "piesek", id: 3 },
+    { img: `${banner4}`, alt: "piesek", id: 4 },
+    { img: `${banner5}`, alt: "piesek", id: 7 },
     { img: `${dog5}`, alt: "piesek", id: 5 },
     { img: `${dog6}`, alt: "piesek", id: 6 }
   ];

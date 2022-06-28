@@ -2,6 +2,7 @@ import React from "react";
 import "./Treningi.css";
 import dogo1 from "./../../assets/dogo1.jpg";
 import dogo2 from "./../../assets/p1.jpg";
+
 import Galeria from "./Galeria";
 
 import { Wrapper } from "./Wrapper";

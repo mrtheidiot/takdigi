@@ -1,5 +1,9 @@
 import TrainingSection from "./TrainingSection";
-import piesek from "./../../assets/p2.jpg";
+import piesek from './../../assets/indywid.png';
+import wsp1 from './../../assets/Treningi/wsp1.png';
+import posluszenstwo from './../../assets/elobd.jpg'
+import szczeniak from './../../assets/szczeniak.jpg'
+import soon from './../../assets/soon.png'
 import Banner from "../Banner/Banner";
 import './trainings.css';
 
@@ -23,7 +27,7 @@ const Trainings = () => {
       description: [
         "Zajęcia grupowe.", "Psy muszą być minimum na poziomie kursów podstawowego posłuszeństwa.", "Miejsce spotkań to plac w centrum Szczecina oraz park Kasprowicza.", "Program jest z góry ustalony – 8 spotkań 1x/tydzień.", "Ćwiczenia z zakresu kl. 0 z elementami kl. 1.",
       ],
-      image: `${piesek}`,
+      image: `${posluszenstwo}`,
       organizator: "Szkoła na 6 Łap",
       koszt: "8 spotkań – 550 zł",
     },
@@ -34,7 +38,7 @@ const Trainings = () => {
 
         "Zajęcia grupowe.", "Team musi mieć ukończony kurs Posłuszeństwo z elementami obedience.", "Miejsce spotkań to plac w centrum Szczecina oraz park Kasprowicza.", "Program jest z góry ustalony – 8 spotkań 1x/tydzień.", "Ćwiczenia z zakresu kl. 0 i 1.",
       ],
-      image: `${piesek}`,
+      image: `${soon}`,
       organizator: "Szkoła na 6 Łap",
       koszt: "8 spotkań – ? zł",
     },
@@ -44,7 +48,7 @@ const Trainings = () => {
       description: [
         "Zajęcia grupowe przeznaczone dla szczeniąt w wieku do 5 miesięcy, z którymi właściciele planują sportowe życie.", "Na zajęciach ćwiczymy podstawowe komendy z dodatkiem elementów przydatnych do trenowania obedience.", "Miejsce spotkań to plac w centrum Szczecina.", "Program jest z góry ustalony – 8 spotkań 1x/tydzień.",
       ],
-      image: `${piesek}`,
+      image: `${szczeniak}`,
       organizator: "Szkoła na 6 Łap",
       koszt: "8 spotkań – 550 zł",
     },
@@ -54,7 +58,7 @@ const Trainings = () => {
       description: [
         "Zajęcia grupowe, podczas których „każdy sobie rzepkę skrobie” – Wy ćwiczycie ze swoimi psami, ja ze swoimi.", "Miejsce spotkań jest takie, na jakie się umówimy.", "W zimie wynajmujemy halę.", "Częstotliwość spotkań – jaka komu pasuje :)",
       ],
-      image: `${piesek}`,
+      image: `${wsp1}`,
       organizator: "Tak to się Obi",
       koszt: "1 spotkanie (1h) - 30zł",
       koszt2: "6 spotkań – 150 zł",
@@ -64,14 +68,14 @@ const Trainings = () => {
 
   return (
     <>
-      <Banner id={1} />
+      <Banner id={4} />
       <div className="training-wrapper">
         {trainings.map((trening, index) => (
           <TrainingSection
             title={trening.title}
             link={trening.link}
             description={trening.description}
-            image={piesek}
+            image={trening.image}
             organizator={trening.organizator}
             koszt={trening.koszt}
             koszt2={trening.koszt2}
