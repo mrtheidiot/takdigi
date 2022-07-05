@@ -22,6 +22,7 @@ import SukienkZeWzorem from "./ShopItem/SukienkiZeWzorem";
 import Szarpaki from "./components/Asortyment/Products/Szarpaki";
 import SpodniczkiStandardowe from "./components/Asortyment/Products/SpodniczkiStandardowe";
 import SpodniczkiDlaWysokichPsow from "./components/Asortyment/Products/SpodniczkiDlaWysokichPsow";
+import Cennik from "./components/Cennik/Cennik";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
