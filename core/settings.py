@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1', 
     'takdigi-mnlql.ondigitalocean.app',
+    'orca-app-sdxyr.ondigitalocean.app',
 ]
 
 
