@@ -71,14 +71,10 @@ function App() {
               <Route path="/treningi/obedience-1" element={<Obedience_1 />} />
               <Route path="/treningi/sportowy-szczeniak" element={<SportowySzczeniak />} />
               <Route path="/treningi/treningi-wspolne" element={<Wspolne />} />
-              {/* <Route path="/asortyment/sukienki/" element={<Sukienki1 />} /> */}
-              {/* <Route path="/asortyment/sukienki/shopitem" element={<ShopItem />} /> */}
-              {/* <Route path="/asortyment/sukienki/standard/sukienkizewzorem" element={<SukienkZeWzorem />} /> */}
-              {/* <Route path="/asortyment/sukienki/standard/sukienkibezwzoru" element={<SukienkZeWzorem />} /> */}
-              {/* /asortyment/sukienki/standard/sukienkizewzorem */}
               <Route path="/asortyment/szarpaki/" element={<Szarpaki />} />
               <Route path="/asortyment/spodniczki_standardowe" element={<SpodniczkiStandardowe />} />
               <Route path="/asortyment/spodniczki_dla_wysokich_psow" element={<SpodniczkiDlaWysokichPsow />} />
+              <Route exact path="/cennik" element={<Cennik />} />
             </Routes>
           </div>
         </Router>
